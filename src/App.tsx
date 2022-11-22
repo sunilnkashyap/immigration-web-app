@@ -1,15 +1,18 @@
 import React from "react";
-import logo from "./logo.svg";
-import "./App.css";
+import { RouterProvider } from "react-router-dom";
+import { appRouter } from "./routes";
+import { ThemeProvider } from "@mui/material/styles";
+import { theme } from "./theme";
+import CssBaseline from "@mui/material/CssBaseline";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>Immigration web app.</p>
-      </header>
-    </div>
+    <React.StrictMode>
+      <CssBaseline />
+      <ThemeProvider theme={theme}>
+        <RouterProvider router={appRouter} />
+      </ThemeProvider>
+    </React.StrictMode>
   );
 }
 
