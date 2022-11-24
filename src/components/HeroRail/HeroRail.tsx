@@ -17,6 +17,7 @@ export const HeroRail = () => {
             ? "/assets/images/hero-bg-mobile.jpg"
             : "assets/images/hero-bg-tablet.jpg"
         }')`,
+        marginTop: "11px",
       }}
     >
       <Grid container spacing={3} sx={{ flexGrow: 1 }}>
