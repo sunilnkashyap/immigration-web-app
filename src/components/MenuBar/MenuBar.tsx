@@ -29,7 +29,7 @@ const navItems = [
   "Practice Areas",
   "Reviews",
   "Contact",
-  "عربى",
+  "Language",
 ];
 
 export function MenuBar(props: Props) {
@@ -86,7 +86,9 @@ export function MenuBar(props: Props) {
           sx={{ border: "none", display: { xs: "none", sm: "block" } }}
         >
           {navItems.map((item) => (
-            <Button sx={linkButtonStyle(item === "Home")}>{item}</Button>
+            <Button key={`${item}`} sx={linkButtonStyle(item === "Home")}>
+              {item}
+            </Button>
           ))}
         </ButtonGroup>
       </Container>

@@ -2,8 +2,10 @@ import React from "react";
 import { Box, Container } from "@mui/material";
 import { HeroRail, ImmigrationAttorney, TopBar } from "../../components";
 import Grid from "@mui/material/Unstable_Grid2";
+import { useTranslation } from "react-i18next";
 
 export const HomePage = () => {
+  const { t, i18n } = useTranslation();
   return (
     <>
       <Box>
@@ -28,7 +30,7 @@ export const HomePage = () => {
             <ImmigrationAttorney />
           </Grid>
           <Grid xs={5} xsOffset={2}>
-            <h1>Slider Section</h1>
+            <h1>{t("Welcome to React")}</h1>
           </Grid>
         </Grid>
       </Container>

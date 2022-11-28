@@ -2,9 +2,11 @@ import React from "react";
 import { Box, Typography, useMediaQuery, useTheme } from "@mui/material";
 import Grid from "@mui/material/Unstable_Grid2"; // Grid version 2
 import ClearIcon from "@mui/icons-material/Clear";
+import { useTranslation } from "react-i18next";
 
 export const HeroRail = () => {
   const theme = useTheme();
+  const { t, i18n } = useTranslation();
   const isMobile = useMediaQuery(theme.breakpoints.down("sm"));
   const isDesktop = useMediaQuery(theme.breakpoints.up("md"));
   return (
@@ -65,7 +67,7 @@ export const HeroRail = () => {
                 color: "#ffffff",
               }}
             >
-              The Law Offices of Fady Eskandar
+              {t("home.hero.title")}
             </Typography>
 
             <Typography

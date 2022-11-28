@@ -15,10 +15,14 @@
     "@types/react": "^18.0.25",
     "@types/react-dom": "^18.0.8",
     "husky": "^8.0.2",
+    "i18next": "^22.0.6",
+    "i18next-browser-languagedetector": "^7.0.1",
+    "i18next-http-backend": "^2.0.2",
     "lint-staged": "^13.0.3",
     "prettier": "^2.7.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-i18next": "^12.0.0",
     "react-router-dom": "^6.4.3",
     "react-scripts": "5.0.1",
     "web-vitals": "^2.1.4"
@@ -31,7 +35,6 @@
     "prepare": "husky install",
     "prettier": "lint-staged",
     "lint": "eslint /src --ext .ts,.tsx --fix"
-
   },
   "eslintConfig": {
     "extends": [

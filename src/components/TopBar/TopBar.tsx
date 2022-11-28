@@ -1,3 +1,4 @@
+import React from "react";
 import { Box } from "@mui/material";
 import { colors } from "../../theme";
 import { MenuBar } from "../MenuBar/MenuBar";
