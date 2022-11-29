@@ -7,3 +7,14 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+.li-square {
+  list-style-type: square;
+  margin: 10px;
+}
+
+.li-square::marker {
+  color: black;
+  font-weight: bold;
+  font-size: 24px;
+}

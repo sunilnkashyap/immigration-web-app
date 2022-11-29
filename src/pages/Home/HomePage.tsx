@@ -1,6 +1,12 @@
 import React from "react";
 import { Box, Container } from "@mui/material";
-import { HeroRail, ImmigrationAttorney, TopBar } from "../../components";
+import {
+  HeroRail,
+  ImmigrationAttorney,
+  PracticeAreas,
+  ServiceSlider,
+  TopBar,
+} from "../../components";
 import Grid from "@mui/material/Unstable_Grid2";
 import { useTranslation } from "react-i18next";
 
@@ -19,6 +25,7 @@ export const HomePage = () => {
           container
           rowSpacing={1}
           columnSpacing={{ xs: 1, sm: 2, md: 6 }}
+          alignItems="center"
           sx={{
             paddingTop:
               "calc((50 * 1px) + (100 - 50) * ((100vw - 320px) / (1920 - 320)))",
@@ -26,11 +33,17 @@ export const HomePage = () => {
               "calc((50 * 1px) + (100 - 50) * ((100vw - 320px) / (1920 - 320)))",
           }}
         >
-          <Grid xs={5}>
+          <Grid xs={12} md={6}>
             <ImmigrationAttorney />
           </Grid>
-          <Grid xs={5} xsOffset={2}>
-            <h1>{t("Welcome to React")}</h1>
+          <Grid xs={12} md={6}>
+            <ServiceSlider />
+          </Grid>
+        </Grid>
+
+        <Grid container rowSpacing={1}>
+          <Grid xs={12} md={12}>
+            <PracticeAreas />
           </Grid>
         </Grid>
       </Container>
