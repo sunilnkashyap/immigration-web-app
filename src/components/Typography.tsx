@@ -13,7 +13,7 @@ export const HeadingText = styled(Typography)({
 
 export const SubHeadingText = styled(Typography)({
   fontFamily: "Georama, sans-serif",
-  fontSize: "1rem",
+  fontSize: "1.33rem",
   letterSpacing: "0.2em",
   lineHeight: 1.42,
   fontWeight: 400,

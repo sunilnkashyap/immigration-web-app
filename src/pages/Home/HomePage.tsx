@@ -1,6 +1,7 @@
 import React from "react";
 import { Box, Container } from "@mui/material";
 import {
+  DedicatedLegalAdvocacy,
   HeroRail,
   ImmigrationAttorney,
   PracticeAreas,
@@ -44,6 +45,12 @@ export const HomePage = () => {
         <Grid container rowSpacing={1}>
           <Grid xs={12} md={12}>
             <PracticeAreas />
+          </Grid>
+        </Grid>
+
+        <Grid container rowSpacing={1}>
+          <Grid xs={12} md={6} sx={{ mt: 20, mb: 5 }}>
+            <DedicatedLegalAdvocacy />
           </Grid>
         </Grid>
       </Container>
