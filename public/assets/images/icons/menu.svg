@@ -1,0 +1,20 @@
+<svg
+  viewBox="0 0 36 36"
+  class="fltr lt"
+  style="width: 50px; height: 50px"
+  title="Open the accessibility options menu"
+  tabindex="0"
+  data-action="open"
+  data-role="btn"
+  data-type="open"
+  role="button"
+  aria-pressed="false"
+  aria-haspopup="false"
+  data-use="assets/images/icons/accessibility.svg#accessibility"
+>
+  <circle cx="18" cy="18" r="18" class="cls-1"></circle>
+  <path
+    class="cls-2"
+    d="M20.308 27.42a1.124 1.124 0 0 0 1.04 0.68a1.064 1.064 0 0 0 0.48-0.12a1.152 1.152 0 0 0 0.56-1.56s-2.2-5.04-2.6-6.88a25.092 25.092 0 0 1-0.28-3.16a0.616 0.616 0 0 1 0.4-0.6l4.92-1.48a1.164 1.164 0 0 0-0.64-2.24s-4.56 1.48-6.2 1.48-6.12-1.44-6.12-1.44a1.2 1.2 0 0 0-1.48 0.72a1.156 1.156 0 0 0 0.8 1.48l4.92 1.48a0.568 0.568 0 0 1 0.4 0.6a25.092 25.092 0 0 1-0.28 3.16c-0.4 1.84-2.6 6.88-2.6 6.88a1.2 1.2 0 0 0 0.56 1.56a1.12 1.12 0 0 0 0.48 0.12a1.092 1.092 0 0 0 1.04-0.68l2.36-4.8Zm0-17.28a2.24 2.24 0 1 1-2.24-2.24a2.24 2.24 0 0 1 2.24 2.24"
+  ></path>
+</svg>
