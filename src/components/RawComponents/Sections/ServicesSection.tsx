@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 
 export const ServicesSection = () => {
   useEffect(() => {
-    (window as any).USC.scrollingList(
+    (window as any)?.USC?.scrollingList(
       document.getElementById("ServicesV3List")
     );
   }, []);

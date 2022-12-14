@@ -4,16 +4,15 @@ import { useTranslation } from "react-i18next";
 import {
   Header,
   Footer,
-  HeroBanner,
-  ServicesSection,
-  PracticeAreasSection,
-  LegalAdvocacySection,
+  ServicesGridSection,
+  ImmigrationServicesSection,
+  PracticeAreasBannerSection,
+  OurServiceAreasSection,
   ReadOurReviews,
-  FeedSection,
-  ContactUs,
+  ContactUsDetailed,
 } from "../../components/RawComponents";
 
-export const HomePageV2 = () => {
+export const PracticeAreas = () => {
   const { t, i18n } = useTranslation();
   return (
     <>
@@ -22,16 +21,17 @@ export const HomePageV2 = () => {
       </Box>
 
       <Box>
-        <HeroBanner />
+        <PracticeAreasBannerSection />
 
-        <ServicesSection />
-        <PracticeAreasSection />
-        <LegalAdvocacySection />
+        <ServicesGridSection />
 
-        <ReadOurReviews />
+        <ImmigrationServicesSection />
 
-        <FeedSection />
-        <ContactUs />
+        <OurServiceAreasSection />
+
+        <ReadOurReviews bg="light" />
+
+        <ContactUsDetailed />
       </Box>
 
       <Box>

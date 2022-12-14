@@ -1,1 +1,3 @@
-export * from "./Home";
+export * from "./PracticeAreas";
+export * from "./OurFirm";
+export * from "./HomeV2";

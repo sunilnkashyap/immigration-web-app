@@ -4,7 +4,9 @@ import { useTranslation } from "react-i18next";
 import {
   Header,
   Footer,
-  HomePageContent,
+  OurFirmSection,
+  ReadOurReviews,
+  ContactUs,
 } from "../../components/RawComponents";
 
 export const OurFirm = () => {
@@ -16,7 +18,9 @@ export const OurFirm = () => {
       </Box>
 
       <Box>
-        <HomePageContent />
+        <OurFirmSection />
+        <ReadOurReviews />
+        <ContactUs />
       </Box>
 
       <Box>

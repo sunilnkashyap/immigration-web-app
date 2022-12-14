@@ -1,13 +1,21 @@
 import React, { useEffect } from "react";
 
-export const ReadOurReviews = () => {
+interface Props {
+  bg?: string;
+}
+
+export const ReadOurReviews = (props: Props) => {
   useEffect(() => {
-    (window as any).USC.scrollingList(document.getElementById("ReviewsV1Feed"));
+    (window as any)?.USC?.scrollingList(
+      document.getElementById("ReviewsV1Feed")
+    );
   }, []);
 
   return (
     <section
-      className="rvw v1 dk-bg pd_v-60 rsp_opn-tp rsp_opn-bt bg-image start active"
+      className={`rvw v1 ${
+        props.bg == "light" ? "" : " dk-bg "
+      } pd_v-60 rsp_opn-tp rsp_opn-bt bg-image start active`}
       id="ReviewsV1"
       data-role="scroller"
     >

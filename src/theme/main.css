@@ -3824,36 +3824,60 @@ fieldset .sgt .inp-sgt .tgs > li {
     ~ li {
     width: calc(25% - 1.8rem);
   }
-  [class*="ato-sz"][class*="flx-"][class*="-grd"][class*="-sml"]:not([class*="mx-3"])
+  [class*="ato-sz"][class*="flx-"][class*="-grd"][class*="-sml"]:not(
+      [class*="mx-3"]
+    )
     > li:nth-last-of-type(4n - 2):first-of-type,
-  [class*="ato-sz"][class*="flx-"][class*="-grd"][class*="-sml"]:not([class*="mx-3"])
+  [class*="ato-sz"][class*="flx-"][class*="-grd"][class*="-sml"]:not(
+      [class*="mx-3"]
+    )
     > li:nth-last-of-type(4n - 2):first-of-type
     ~ li,
-  [class*="ato-sz"][class*="flx-"][class*="-grd"][class*="-sml"]:not([class*="mx-3"])
+  [class*="ato-sz"][class*="flx-"][class*="-grd"][class*="-sml"]:not(
+      [class*="mx-3"]
+    )
     > li:nth-last-of-type(4n - 1):first-of-type,
-  [class*="ato-sz"][class*="flx-"][class*="-grd"][class*="-sml"]:not([class*="mx-3"])
+  [class*="ato-sz"][class*="flx-"][class*="-grd"][class*="-sml"]:not(
+      [class*="mx-3"]
+    )
     > li:nth-last-of-type(4n - 1):first-of-type
     ~ li,
-  [class*="ato-sz"][class*="flx-"][class*="-grd"][class*="-sml"]:not([class*="mx-3"])
+  [class*="ato-sz"][class*="flx-"][class*="-grd"][class*="-sml"]:not(
+      [class*="mx-3"]
+    )
     > li:nth-last-of-type(4n):first-of-type,
-  [class*="ato-sz"][class*="flx-"][class*="-grd"][class*="-sml"]:not([class*="mx-3"])
+  [class*="ato-sz"][class*="flx-"][class*="-grd"][class*="-sml"]:not(
+      [class*="mx-3"]
+    )
     > li:nth-last-of-type(4n):first-of-type
     ~ li {
     width: calc(25% - (1.8rem * 0.7));
   }
-  [class*="ato-sz"][class*="flx-"][class*="-grd"][class*="-lrg"]:not([class*="mx-3"])
+  [class*="ato-sz"][class*="flx-"][class*="-grd"][class*="-lrg"]:not(
+      [class*="mx-3"]
+    )
     > li:nth-last-of-type(4n - 2):first-of-type,
-  [class*="ato-sz"][class*="flx-"][class*="-grd"][class*="-lrg"]:not([class*="mx-3"])
+  [class*="ato-sz"][class*="flx-"][class*="-grd"][class*="-lrg"]:not(
+      [class*="mx-3"]
+    )
     > li:nth-last-of-type(4n - 2):first-of-type
     ~ li,
-  [class*="ato-sz"][class*="flx-"][class*="-grd"][class*="-lrg"]:not([class*="mx-3"])
+  [class*="ato-sz"][class*="flx-"][class*="-grd"][class*="-lrg"]:not(
+      [class*="mx-3"]
+    )
     > li:nth-last-of-type(4n - 1):first-of-type,
-  [class*="ato-sz"][class*="flx-"][class*="-grd"][class*="-lrg"]:not([class*="mx-3"])
+  [class*="ato-sz"][class*="flx-"][class*="-grd"][class*="-lrg"]:not(
+      [class*="mx-3"]
+    )
     > li:nth-last-of-type(4n - 1):first-of-type
     ~ li,
-  [class*="ato-sz"][class*="flx-"][class*="-grd"][class*="-lrg"]:not([class*="mx-3"])
+  [class*="ato-sz"][class*="flx-"][class*="-grd"][class*="-lrg"]:not(
+      [class*="mx-3"]
+    )
     > li:nth-last-of-type(4n):first-of-type,
-  [class*="ato-sz"][class*="flx-"][class*="-grd"][class*="-lrg"]:not([class*="mx-3"])
+  [class*="ato-sz"][class*="flx-"][class*="-grd"][class*="-lrg"]:not(
+      [class*="mx-3"]
+    )
     > li:nth-last-of-type(4n):first-of-type
     ~ li {
     width: calc(25% - (1.8rem * 1.5));
@@ -3880,38 +3904,62 @@ fieldset .sgt .inp-sgt .tgs > li {
     > li {
     width: calc(20% - (1.8rem * 0.7));
   }
-  [class*="ato-sz"][class*="flx-"][class*="-grd"][class*="-sml"]:not([class*="mx-4"]):not([class*="mx-3"])
+  [class*="ato-sz"][class*="flx-"][class*="-grd"][class*="-sml"]:not(
+      [class*="mx-4"]
+    ):not([class*="mx-3"])
     > li:nth-last-of-type(5n - 2):first-of-type,
-  [class*="ato-sz"][class*="flx-"][class*="-grd"][class*="-sml"]:not([class*="mx-4"]):not([class*="mx-3"])
+  [class*="ato-sz"][class*="flx-"][class*="-grd"][class*="-sml"]:not(
+      [class*="mx-4"]
+    ):not([class*="mx-3"])
     > li:nth-last-of-type(5n - 2):first-of-type
     ~ li,
-  [class*="ato-sz"][class*="flx-"][class*="-grd"][class*="-sml"]:not([class*="mx-4"]):not([class*="mx-3"])
+  [class*="ato-sz"][class*="flx-"][class*="-grd"][class*="-sml"]:not(
+      [class*="mx-4"]
+    ):not([class*="mx-3"])
     > li:nth-last-of-type(5n - 1):first-of-type,
-  [class*="ato-sz"][class*="flx-"][class*="-grd"][class*="-sml"]:not([class*="mx-4"]):not([class*="mx-3"])
+  [class*="ato-sz"][class*="flx-"][class*="-grd"][class*="-sml"]:not(
+      [class*="mx-4"]
+    ):not([class*="mx-3"])
     > li:nth-last-of-type(5n - 1):first-of-type
     ~ li,
-  [class*="ato-sz"][class*="flx-"][class*="-grd"][class*="-sml"]:not([class*="mx-4"]):not([class*="mx-3"])
+  [class*="ato-sz"][class*="flx-"][class*="-grd"][class*="-sml"]:not(
+      [class*="mx-4"]
+    ):not([class*="mx-3"])
     > li:nth-last-of-type(5n):first-of-type,
-  [class*="ato-sz"][class*="flx-"][class*="-grd"][class*="-sml"]:not([class*="mx-4"]):not([class*="mx-3"])
+  [class*="ato-sz"][class*="flx-"][class*="-grd"][class*="-sml"]:not(
+      [class*="mx-4"]
+    ):not([class*="mx-3"])
     > li:nth-last-of-type(5n):first-of-type
     ~ li {
     width: calc(20% - (1.8rem * 0.7));
   }
 }
 @media screen and (min-width: 1601px) {
-  [class*="ato-sz"][class*="flx-"][class*="-grd"][class*="-sml"]:not([class*="mx-5"]):not([class*="mx-4"]):not([class*="mx-3"])
+  [class*="ato-sz"][class*="flx-"][class*="-grd"][class*="-sml"]:not(
+      [class*="mx-5"]
+    ):not([class*="mx-4"]):not([class*="mx-3"])
     > li:nth-last-of-type(6n - 2):first-of-type,
-  [class*="ato-sz"][class*="flx-"][class*="-grd"][class*="-sml"]:not([class*="mx-5"]):not([class*="mx-4"]):not([class*="mx-3"])
+  [class*="ato-sz"][class*="flx-"][class*="-grd"][class*="-sml"]:not(
+      [class*="mx-5"]
+    ):not([class*="mx-4"]):not([class*="mx-3"])
     > li:nth-last-of-type(6n - 2):first-of-type
     ~ li,
-  [class*="ato-sz"][class*="flx-"][class*="-grd"][class*="-sml"]:not([class*="mx-5"]):not([class*="mx-4"]):not([class*="mx-3"])
+  [class*="ato-sz"][class*="flx-"][class*="-grd"][class*="-sml"]:not(
+      [class*="mx-5"]
+    ):not([class*="mx-4"]):not([class*="mx-3"])
     > li:nth-last-of-type(6n - 1):first-of-type,
-  [class*="ato-sz"][class*="flx-"][class*="-grd"][class*="-sml"]:not([class*="mx-5"]):not([class*="mx-4"]):not([class*="mx-3"])
+  [class*="ato-sz"][class*="flx-"][class*="-grd"][class*="-sml"]:not(
+      [class*="mx-5"]
+    ):not([class*="mx-4"]):not([class*="mx-3"])
     > li:nth-last-of-type(6n - 1):first-of-type
     ~ li,
-  [class*="ato-sz"][class*="flx-"][class*="-grd"][class*="-sml"]:not([class*="mx-5"]):not([class*="mx-4"]):not([class*="mx-3"])
+  [class*="ato-sz"][class*="flx-"][class*="-grd"][class*="-sml"]:not(
+      [class*="mx-5"]
+    ):not([class*="mx-4"]):not([class*="mx-3"])
     > li:nth-last-of-type(6n):first-of-type,
-  [class*="ato-sz"][class*="flx-"][class*="-grd"][class*="-sml"]:not([class*="mx-5"]):not([class*="mx-4"]):not([class*="mx-3"])
+  [class*="ato-sz"][class*="flx-"][class*="-grd"][class*="-sml"]:not(
+      [class*="mx-5"]
+    ):not([class*="mx-4"]):not([class*="mx-3"])
     > li:nth-last-of-type(6n):first-of-type
     ~ li {
     width: calc(16.666% - (1.8rem * 0.7));
@@ -4089,55 +4137,91 @@ fieldset .sgt .inp-sgt .tgs > li {
     ~ li {
     width: 20%;
   }
-  [class*="ato-sz"][class*="flx-"][class*="-grd"]:not([class*="mx-4"]):not([class*="mx-3"])
+  [class*="ato-sz"][class*="flx-"][class*="-grd"]:not([class*="mx-4"]):not(
+      [class*="mx-3"]
+    )
     > li:nth-last-of-type(5n - 2):first-of-type,
-  [class*="ato-sz"][class*="flx-"][class*="-grd"]:not([class*="mx-4"]):not([class*="mx-3"])
+  [class*="ato-sz"][class*="flx-"][class*="-grd"]:not([class*="mx-4"]):not(
+      [class*="mx-3"]
+    )
     > li:nth-last-of-type(5n - 2):first-of-type
     ~ li,
-  [class*="ato-sz"][class*="flx-"][class*="-grd"]:not([class*="mx-4"]):not([class*="mx-3"])
+  [class*="ato-sz"][class*="flx-"][class*="-grd"]:not([class*="mx-4"]):not(
+      [class*="mx-3"]
+    )
     > li:nth-last-of-type(5n - 1):first-of-type,
-  [class*="ato-sz"][class*="flx-"][class*="-grd"]:not([class*="mx-4"]):not([class*="mx-3"])
+  [class*="ato-sz"][class*="flx-"][class*="-grd"]:not([class*="mx-4"]):not(
+      [class*="mx-3"]
+    )
     > li:nth-last-of-type(5n - 1):first-of-type
     ~ li,
-  [class*="ato-sz"][class*="flx-"][class*="-grd"]:not([class*="mx-4"]):not([class*="mx-3"])
+  [class*="ato-sz"][class*="flx-"][class*="-grd"]:not([class*="mx-4"]):not(
+      [class*="mx-3"]
+    )
     > li:nth-last-of-type(5n):first-of-type,
-  [class*="ato-sz"][class*="flx-"][class*="-grd"]:not([class*="mx-4"]):not([class*="mx-3"])
+  [class*="ato-sz"][class*="flx-"][class*="-grd"]:not([class*="mx-4"]):not(
+      [class*="mx-3"]
+    )
     > li:nth-last-of-type(5n):first-of-type
     ~ li {
     width: calc(20% - 1.8rem);
   }
 }
 @media screen and (min-width: 1601px) {
-  [class*="ato-sz"][class*="flx-"]:not([class*="mx-5"]):not([class*="mx-4"]):not([class*="mx-3"])
+  [class*="ato-sz"][class*="flx-"]:not([class*="mx-5"]):not(
+      [class*="mx-4"]
+    ):not([class*="mx-3"])
     > li:nth-last-of-type(6n - 2):first-of-type,
-  [class*="ato-sz"][class*="flx-"]:not([class*="mx-5"]):not([class*="mx-4"]):not([class*="mx-3"])
+  [class*="ato-sz"][class*="flx-"]:not([class*="mx-5"]):not(
+      [class*="mx-4"]
+    ):not([class*="mx-3"])
     > li:nth-last-of-type(6n - 2):first-of-type
     ~ li,
-  [class*="ato-sz"][class*="flx-"]:not([class*="mx-5"]):not([class*="mx-4"]):not([class*="mx-3"])
+  [class*="ato-sz"][class*="flx-"]:not([class*="mx-5"]):not(
+      [class*="mx-4"]
+    ):not([class*="mx-3"])
     > li:nth-last-of-type(6n - 1):first-of-type,
-  [class*="ato-sz"][class*="flx-"]:not([class*="mx-5"]):not([class*="mx-4"]):not([class*="mx-3"])
+  [class*="ato-sz"][class*="flx-"]:not([class*="mx-5"]):not(
+      [class*="mx-4"]
+    ):not([class*="mx-3"])
     > li:nth-last-of-type(6n - 1):first-of-type
     ~ li,
-  [class*="ato-sz"][class*="flx-"]:not([class*="mx-5"]):not([class*="mx-4"]):not([class*="mx-3"])
+  [class*="ato-sz"][class*="flx-"]:not([class*="mx-5"]):not(
+      [class*="mx-4"]
+    ):not([class*="mx-3"])
     > li:nth-last-of-type(6n):first-of-type,
-  [class*="ato-sz"][class*="flx-"]:not([class*="mx-5"]):not([class*="mx-4"]):not([class*="mx-3"])
+  [class*="ato-sz"][class*="flx-"]:not([class*="mx-5"]):not(
+      [class*="mx-4"]
+    ):not([class*="mx-3"])
     > li:nth-last-of-type(6n):first-of-type
     ~ li {
     width: 16.666%;
   }
-  [class*="ato-sz"][class*="flx-"][class*="-grd"]:not([class*="mx-5"]):not([class*="mx-4"]):not([class*="mx-3"])
+  [class*="ato-sz"][class*="flx-"][class*="-grd"]:not([class*="mx-5"]):not(
+      [class*="mx-4"]
+    ):not([class*="mx-3"])
     > li:nth-last-of-type(6n - 2):first-of-type,
-  [class*="ato-sz"][class*="flx-"][class*="-grd"]:not([class*="mx-5"]):not([class*="mx-4"]):not([class*="mx-3"])
+  [class*="ato-sz"][class*="flx-"][class*="-grd"]:not([class*="mx-5"]):not(
+      [class*="mx-4"]
+    ):not([class*="mx-3"])
     > li:nth-last-of-type(6n - 2):first-of-type
     ~ li,
-  [class*="ato-sz"][class*="flx-"][class*="-grd"]:not([class*="mx-5"]):not([class*="mx-4"]):not([class*="mx-3"])
+  [class*="ato-sz"][class*="flx-"][class*="-grd"]:not([class*="mx-5"]):not(
+      [class*="mx-4"]
+    ):not([class*="mx-3"])
     > li:nth-last-of-type(6n - 1):first-of-type,
-  [class*="ato-sz"][class*="flx-"][class*="-grd"]:not([class*="mx-5"]):not([class*="mx-4"]):not([class*="mx-3"])
+  [class*="ato-sz"][class*="flx-"][class*="-grd"]:not([class*="mx-5"]):not(
+      [class*="mx-4"]
+    ):not([class*="mx-3"])
     > li:nth-last-of-type(6n - 1):first-of-type
     ~ li,
-  [class*="ato-sz"][class*="flx-"][class*="-grd"]:not([class*="mx-5"]):not([class*="mx-4"]):not([class*="mx-3"])
+  [class*="ato-sz"][class*="flx-"][class*="-grd"]:not([class*="mx-5"]):not(
+      [class*="mx-4"]
+    ):not([class*="mx-3"])
     > li:nth-last-of-type(6n):first-of-type,
-  [class*="ato-sz"][class*="flx-"][class*="-grd"]:not([class*="mx-5"]):not([class*="mx-4"]):not([class*="mx-3"])
+  [class*="ato-sz"][class*="flx-"][class*="-grd"]:not([class*="mx-5"]):not(
+      [class*="mx-4"]
+    ):not([class*="mx-3"])
     > li:nth-last-of-type(6n):first-of-type
     ~ li {
     width: calc(16.666% - 1.8rem);
@@ -5354,19 +5438,31 @@ html:not(.cms-content) .el-tab-box .el-panel:not(.active) {
     > li {
     width: calc(25% - (1.8rem * 1.5));
   }
-  [class*="ato-sz"][class*="flx-"][class*="-grd"][class*="-lrg"]:not([class*="mx-3"])
+  [class*="ato-sz"][class*="flx-"][class*="-grd"][class*="-lrg"]:not(
+      [class*="mx-3"]
+    )
     > li:nth-last-of-type(4n - 2):first-of-type,
-  [class*="ato-sz"][class*="flx-"][class*="-grd"][class*="-lrg"]:not([class*="mx-3"])
+  [class*="ato-sz"][class*="flx-"][class*="-grd"][class*="-lrg"]:not(
+      [class*="mx-3"]
+    )
     > li:nth-last-of-type(4n - 2):first-of-type
     ~ li,
-  [class*="ato-sz"][class*="flx-"][class*="-grd"][class*="-lrg"]:not([class*="mx-3"])
+  [class*="ato-sz"][class*="flx-"][class*="-grd"][class*="-lrg"]:not(
+      [class*="mx-3"]
+    )
     > li:nth-last-of-type(4n - 1):first-of-type,
-  [class*="ato-sz"][class*="flx-"][class*="-grd"][class*="-lrg"]:not([class*="mx-3"])
+  [class*="ato-sz"][class*="flx-"][class*="-grd"][class*="-lrg"]:not(
+      [class*="mx-3"]
+    )
     > li:nth-last-of-type(4n - 1):first-of-type
     ~ li,
-  [class*="ato-sz"][class*="flx-"][class*="-grd"][class*="-lrg"]:not([class*="mx-3"])
+  [class*="ato-sz"][class*="flx-"][class*="-grd"][class*="-lrg"]:not(
+      [class*="mx-3"]
+    )
     > li:nth-last-of-type(4n):first-of-type,
-  [class*="ato-sz"][class*="flx-"][class*="-grd"][class*="-lrg"]:not([class*="mx-3"])
+  [class*="ato-sz"][class*="flx-"][class*="-grd"][class*="-lrg"]:not(
+      [class*="mx-3"]
+    )
     > li:nth-last-of-type(4n):first-of-type
     ~ li {
     width: calc(25% - (1.8rem * 1.5));
@@ -5393,38 +5489,62 @@ html:not(.cms-content) .el-tab-box .el-panel:not(.active) {
     > li {
     width: calc(20% - (1.8rem * 1.5));
   }
-  [class*="ato-sz"][class*="flx-"][class*="-grd"][class*="-lrg"]:not([class*="mx-4"]):not([class*="mx-3"])
+  [class*="ato-sz"][class*="flx-"][class*="-grd"][class*="-lrg"]:not(
+      [class*="mx-4"]
+    ):not([class*="mx-3"])
     > li:nth-last-of-type(5n - 2):first-of-type,
-  [class*="ato-sz"][class*="flx-"][class*="-grd"][class*="-lrg"]:not([class*="mx-4"]):not([class*="mx-3"])
+  [class*="ato-sz"][class*="flx-"][class*="-grd"][class*="-lrg"]:not(
+      [class*="mx-4"]
+    ):not([class*="mx-3"])
     > li:nth-last-of-type(5n - 2):first-of-type
     ~ li,
-  [class*="ato-sz"][class*="flx-"][class*="-grd"][class*="-lrg"]:not([class*="mx-4"]):not([class*="mx-3"])
+  [class*="ato-sz"][class*="flx-"][class*="-grd"][class*="-lrg"]:not(
+      [class*="mx-4"]
+    ):not([class*="mx-3"])
     > li:nth-last-of-type(5n - 1):first-of-type,
-  [class*="ato-sz"][class*="flx-"][class*="-grd"][class*="-lrg"]:not([class*="mx-4"]):not([class*="mx-3"])
+  [class*="ato-sz"][class*="flx-"][class*="-grd"][class*="-lrg"]:not(
+      [class*="mx-4"]
+    ):not([class*="mx-3"])
     > li:nth-last-of-type(5n - 1):first-of-type
     ~ li,
-  [class*="ato-sz"][class*="flx-"][class*="-grd"][class*="-lrg"]:not([class*="mx-4"]):not([class*="mx-3"])
+  [class*="ato-sz"][class*="flx-"][class*="-grd"][class*="-lrg"]:not(
+      [class*="mx-4"]
+    ):not([class*="mx-3"])
     > li:nth-last-of-type(5n):first-of-type,
-  [class*="ato-sz"][class*="flx-"][class*="-grd"][class*="-lrg"]:not([class*="mx-4"]):not([class*="mx-3"])
+  [class*="ato-sz"][class*="flx-"][class*="-grd"][class*="-lrg"]:not(
+      [class*="mx-4"]
+    ):not([class*="mx-3"])
     > li:nth-last-of-type(5n):first-of-type
     ~ li {
     width: calc(20% - (1.8rem * 1.5));
   }
 }
 @media screen and (min-width: 1601px) {
-  [class*="ato-sz"][class*="flx-"][class*="-grd"][class*="-lrg"]:not([class*="mx-5"]):not([class*="mx-4"]):not([class*="mx-3"])
+  [class*="ato-sz"][class*="flx-"][class*="-grd"][class*="-lrg"]:not(
+      [class*="mx-5"]
+    ):not([class*="mx-4"]):not([class*="mx-3"])
     > li:nth-last-of-type(6n - 2):first-of-type,
-  [class*="ato-sz"][class*="flx-"][class*="-grd"][class*="-lrg"]:not([class*="mx-5"]):not([class*="mx-4"]):not([class*="mx-3"])
+  [class*="ato-sz"][class*="flx-"][class*="-grd"][class*="-lrg"]:not(
+      [class*="mx-5"]
+    ):not([class*="mx-4"]):not([class*="mx-3"])
     > li:nth-last-of-type(6n - 2):first-of-type
     ~ li,
-  [class*="ato-sz"][class*="flx-"][class*="-grd"][class*="-lrg"]:not([class*="mx-5"]):not([class*="mx-4"]):not([class*="mx-3"])
+  [class*="ato-sz"][class*="flx-"][class*="-grd"][class*="-lrg"]:not(
+      [class*="mx-5"]
+    ):not([class*="mx-4"]):not([class*="mx-3"])
     > li:nth-last-of-type(6n - 1):first-of-type,
-  [class*="ato-sz"][class*="flx-"][class*="-grd"][class*="-lrg"]:not([class*="mx-5"]):not([class*="mx-4"]):not([class*="mx-3"])
+  [class*="ato-sz"][class*="flx-"][class*="-grd"][class*="-lrg"]:not(
+      [class*="mx-5"]
+    ):not([class*="mx-4"]):not([class*="mx-3"])
     > li:nth-last-of-type(6n - 1):first-of-type
     ~ li,
-  [class*="ato-sz"][class*="flx-"][class*="-grd"][class*="-lrg"]:not([class*="mx-5"]):not([class*="mx-4"]):not([class*="mx-3"])
+  [class*="ato-sz"][class*="flx-"][class*="-grd"][class*="-lrg"]:not(
+      [class*="mx-5"]
+    ):not([class*="mx-4"]):not([class*="mx-3"])
     > li:nth-last-of-type(6n):first-of-type,
-  [class*="ato-sz"][class*="flx-"][class*="-grd"][class*="-lrg"]:not([class*="mx-5"]):not([class*="mx-4"]):not([class*="mx-3"])
+  [class*="ato-sz"][class*="flx-"][class*="-grd"][class*="-lrg"]:not(
+      [class*="mx-5"]
+    ):not([class*="mx-4"]):not([class*="mx-3"])
     > li:nth-last-of-type(6n):first-of-type
     ~ li {
     width: calc(16.666% - (1.8rem * 1.5));

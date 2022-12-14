@@ -1,5 +1,11 @@
 import React from "react";
 
+import logoImage from "../../../assets/logo/logo.png";
+import logo2Image from "../../../assets/logo/logo2.png";
+import footerBgImage from "../../../assets/images/footer-v2-bg.jpg";
+import footerBgMobileImage from "../../../assets/images/footer-v2-bg-mobile.jpg";
+import footerBgTabletImage from "../../../assets/images/footer-v2-bg-tablet.jpg";
+
 export const Footer = () => {
   return (
     <footer id="FooterZone">
@@ -22,19 +28,19 @@ export const Footer = () => {
                 srcSet="
                 data:image/gif;base64,R0lGODlhAQABAIAAAAAAAAAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==
               "
-                data-src="assets/images/footer-v2-bg-mobile.jpg"
+                data-src={footerBgMobileImage}
               />
               <source
                 media="(max-width: 1024px)"
                 srcSet="
                 data:image/gif;base64,R0lGODlhAQABAIAAAAAAAAAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==
               "
-                data-src="assets/images/footer-v2-bg-tablet.jpg"
+                data-src={footerBgTabletImage}
               />
               <img
                 src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAAAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
                 alt=""
-                data-src="assets/images/footer-v2-bg.jpg"
+                data-src={footerBgImage}
               />
             </picture>
           </div>
@@ -47,13 +53,13 @@ export const Footer = () => {
                     className="dk-lg"
                     alt="Law Offices of Fady Eskandar"
                     title="Law Offices of Fady Eskandar"
-                    data-src="assets/images/logo/logo.png"
+                    data-src={logoImage}
                   />
                   <img
                     className="lt-lg"
                     alt="Law Offices of Fady Eskandar"
                     title="Law Offices of Fady Eskandar"
-                    data-src="assets/images/logo/logo2.png"
+                    data-src={logo2Image}
                   />
                 </div>
                 <ul>

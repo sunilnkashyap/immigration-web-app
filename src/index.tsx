@@ -4,6 +4,9 @@ import "./index.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 
+import "./theme/main.css";
+import "./theme/high-res.css";
+
 import "./i18n";
 
 const root = createRoot(document.getElementById("root") as HTMLElement);
