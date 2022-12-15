@@ -17,3 +17,15 @@ export * from "./ServicesGridSection";
 export * from "./ImmigrationServicesSection";
 export * from "./OurServiceAreasSection";
 export * from "./ContactUsDetailed";
+export * from "./AsylumHeader";
+export * from "./AsylumContent";
+export * from "./AsylumContent";
+export * from "./PracticeAreasAside";
+export * from "./FamilyBasedImmigrationContent";
+export * from "./HumanitarianReliefContent";
+
+// contact page
+export * from "./ContactMap";
+
+// review page
+export * from "./ReviewItem";

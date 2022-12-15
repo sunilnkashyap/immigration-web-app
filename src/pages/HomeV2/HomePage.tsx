@@ -12,11 +12,13 @@ import {
   FeedSection,
   ContactUs,
 } from "../../components/RawComponents";
+import { ScrollToTop } from "../../components/ScrollToTop";
 
 export const HomePageV2 = () => {
   const { t, i18n } = useTranslation();
   return (
     <>
+      <ScrollToTop />
       <Box>
         <Header />
       </Box>

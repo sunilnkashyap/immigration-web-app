@@ -10,10 +10,11 @@ import {
   OurServiceAreasSection,
   ReadOurReviews,
   ContactUsDetailed,
+  ContactMap,
 } from "../../components/RawComponents";
 import { ScrollToTop } from "../../components/ScrollToTop";
 
-export const PracticeAreas = () => {
+export const Contact = () => {
   const { t, i18n } = useTranslation();
   return (
     <>
@@ -23,17 +24,11 @@ export const PracticeAreas = () => {
       </Box>
 
       <Box>
-        <PracticeAreasBannerSection title="Practice Areas" />
-
-        <ServicesGridSection />
-
-        <ImmigrationServicesSection />
-
-        <OurServiceAreasSection />
-
-        <ReadOurReviews bg="light" />
+        <PracticeAreasBannerSection title="Contact" />
 
         <ContactUsDetailed />
+
+        <ContactMap />
       </Box>
 
       <Box>

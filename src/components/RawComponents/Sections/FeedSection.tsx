@@ -1,9 +1,11 @@
 import React from "react";
 
-export const FeedSection = () => {
+export const FeedSection = ({ bg }: { bg?: boolean }) => {
   return (
     <section
-      className="cta v1 lt-bg pd_v rsp_opn-tp rsp_opn-bt show-20"
+      className={`cta v1 pd_v rsp_opn-tp rsp_opn-bt show-20 ${
+        bg ? "dk-bg" : "lt-bg"
+      } `}
       id="CtaV1"
       data-onvisible="show-20"
     >

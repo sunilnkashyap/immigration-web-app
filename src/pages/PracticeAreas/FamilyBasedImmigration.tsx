@@ -4,16 +4,13 @@ import { useTranslation } from "react-i18next";
 import {
   Header,
   Footer,
-  ServicesGridSection,
-  ImmigrationServicesSection,
-  PracticeAreasBannerSection,
-  OurServiceAreasSection,
-  ReadOurReviews,
-  ContactUsDetailed,
+  AsylumHeader,
+  FamilyBasedImmigrationContent,
+  FeedSection,
 } from "../../components/RawComponents";
 import { ScrollToTop } from "../../components/ScrollToTop";
 
-export const PracticeAreas = () => {
+export const FamilyBasedImmigration = () => {
   const { t, i18n } = useTranslation();
   return (
     <>
@@ -23,17 +20,14 @@ export const PracticeAreas = () => {
       </Box>
 
       <Box>
-        <PracticeAreasBannerSection title="Practice Areas" />
+        <AsylumHeader
+          image="/assets/images/family-header.jpg"
+          title="Family Based Immigration"
+        />
 
-        <ServicesGridSection />
+        <FamilyBasedImmigrationContent />
 
-        <ImmigrationServicesSection />
-
-        <OurServiceAreasSection />
-
-        <ReadOurReviews bg="light" />
-
-        <ContactUsDetailed />
+        <FeedSection bg />
       </Box>
 
       <Box>

@@ -2,7 +2,7 @@ import React from "react";
 
 import bannerImage from "../../../assets/images/banner-v1-bg.jpg";
 
-export const PracticeAreasBannerSection = () => {
+export const PracticeAreasBannerSection = ({ title }: { title: string }) => {
   return (
     <section className="sb-bnr v1 dk-bg pd_v bg-image" id="SubBannerV1">
       <picture className="img-bg" role="presentation">
@@ -19,7 +19,7 @@ export const PracticeAreasBannerSection = () => {
       <div className="mn_wd">
         <div className="flx-ato-rsp f_r">
           <div className="bg-bx lk-bg pd_v-60 pd_h-30 rsp_pd half ta_c-1024">
-            <strong className="fnt_t-1 fnt_tc-1 blk"> Practice Areas </strong>
+            <strong className="fnt_t-1 fnt_tc-1 blk"> {title} </strong>
           </div>
         </div>
       </div>

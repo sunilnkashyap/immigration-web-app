@@ -5,6 +5,7 @@ import logo2Image from "../../../assets/logo/logo2.png";
 import footerBgImage from "../../../assets/images/footer-v2-bg.jpg";
 import footerBgMobileImage from "../../../assets/images/footer-v2-bg-mobile.jpg";
 import footerBgTabletImage from "../../../assets/images/footer-v2-bg-tablet.jpg";
+import { Link } from "react-router-dom";
 
 export const Footer = () => {
   return (
@@ -25,23 +26,15 @@ export const Footer = () => {
             <picture className="img-bg" role="presentation" data-role="picture">
               <source
                 media="(max-width: 500px)"
-                srcSet="
-                data:image/gif;base64,R0lGODlhAQABAIAAAAAAAAAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==
-              "
+                srcSet={footerBgMobileImage}
                 data-src={footerBgMobileImage}
               />
               <source
                 media="(max-width: 1024px)"
-                srcSet="
-                data:image/gif;base64,R0lGODlhAQABAIAAAAAAAAAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==
-              "
+                srcSet={footerBgTabletImage}
                 data-src={footerBgTabletImage}
               />
-              <img
-                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAAAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
-                alt=""
-                data-src={footerBgImage}
-              />
+              <img src={footerBgImage} alt="" data-src={footerBgImage} />
             </picture>
           </div>
 
@@ -53,13 +46,13 @@ export const Footer = () => {
                     className="dk-lg"
                     alt="Law Offices of Fady Eskandar"
                     title="Law Offices of Fady Eskandar"
-                    data-src={logoImage}
+                    src={logoImage}
                   />
                   <img
                     className="lt-lg"
                     alt="Law Offices of Fady Eskandar"
                     title="Law Offices of Fady Eskandar"
-                    data-src={logo2Image}
+                    src={logo2Image}
                   />
                 </div>
                 <ul>
@@ -72,12 +65,9 @@ export const Footer = () => {
                     </a>
                   </li>
                   <li>
-                    <a
-                      className="fnt_t-6 clr-swp"
-                      href="https://www.immigrationattorneyhelp.com/privacy-policy/"
-                    >
+                    <Link to="/privacy-policy" className="fnt_t-6 clr-swp">
                       Privacy Policy
-                    </a>
+                    </Link>
                   </li>
                 </ul>
               </div>
@@ -148,44 +138,32 @@ export const Footer = () => {
                     <nav className="qk-lnk" id="FooterV2Nav">
                       <ul role="menu" aria-label="Footer Navigation">
                         <li role="menuitem">
-                          <a
-                            className="fnt_t-6 clr-swp"
-                            href="https://www.immigrationattorneyhelp.com/"
-                          >
+                          <Link to="/" className="fnt_t-6 clr-swp">
                             Home
-                          </a>
+                          </Link>
                         </li>
                         <li role="menuitem">
-                          <a
-                            className="fnt_t-6 clr-swp"
-                            href="https://www.immigrationattorneyhelp.com/our-firm/"
-                          >
+                          <Link to="/our-firm" className="fnt_t-6 clr-swp">
                             Our Firm
-                          </a>
+                          </Link>
                         </li>
                         <li role="menuitem">
-                          <a
+                          <Link
+                            to="/practice-areas"
                             className="fnt_t-6 clr-swp"
-                            href="https://www.immigrationattorneyhelp.com/practice-areas/"
                           >
                             Practice Areas
-                          </a>
+                          </Link>
                         </li>
                         <li role="menuitem">
-                          <a
-                            className="fnt_t-6 clr-swp"
-                            href="https://www.immigrationattorneyhelp.com/contact/"
-                          >
+                          <Link to="/contact" className="fnt_t-6 clr-swp">
                             Contact
-                          </a>
+                          </Link>
                         </li>
                         <li role="menuitem">
-                          <a
-                            className="fnt_t-6 clr-swp"
-                            href="https://eskandarlaw.square.site/"
-                          >
+                          <Link to="/" className="fnt_t-6 clr-swp">
                             Schedule A Consultation
-                          </a>
+                          </Link>
                         </li>
                       </ul>
                     </nav>

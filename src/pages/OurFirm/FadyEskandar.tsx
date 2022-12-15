@@ -8,11 +8,13 @@ import {
   ReadOurReviews,
   ContactUs,
 } from "../../components/RawComponents";
+import { ScrollToTop } from "../../components/ScrollToTop";
 
 export const FadyEskandar = () => {
   const { t, i18n } = useTranslation();
   return (
     <>
+      <ScrollToTop />
       <Box>
         <Header />
       </Box>

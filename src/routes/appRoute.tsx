@@ -1,8 +1,20 @@
 import React from "react";
 import { createBrowserRouter } from "react-router-dom";
-import { PracticeAreas } from "../pages";
+import {
+  PracticeAreas,
+  Asylum,
+  FamilyBasedImmigration,
+  HumanitarianRelief,
+  CitizenshipNaturalization,
+  InvestmentImmigration,
+  EmploymentBasedImmigration,
+  DeportationDefense,
+} from "../pages";
+import { Contact } from "../pages/Contact";
 import { HomePageV2 } from "../pages/HomeV2";
 import { FadyEskandar, OurFirm } from "../pages/OurFirm";
+import { PrivacyPolicy } from "../pages/PrivacyPolicy";
+import { Reviews } from "../pages/Reviews";
 
 export const appRouter = createBrowserRouter([
   {
@@ -28,41 +40,45 @@ export const appRouter = createBrowserRouter([
 
   {
     path: "practice-areas/asylum",
-    element: <PracticeAreas />,
+    element: <Asylum />,
   },
 
   {
     path: "practice-areas/family-based-immigration",
-    element: <PracticeAreas />,
+    element: <FamilyBasedImmigration />,
   },
 
   {
     path: "practice-areas/humanitarian-relief",
-    element: <PracticeAreas />,
+    element: <HumanitarianRelief />,
   },
   {
     path: "practice-areas/citizenship-naturalization",
-    element: <PracticeAreas />,
+    element: <CitizenshipNaturalization />,
   },
   {
     path: "practice-areas/investment-immigration",
-    element: <PracticeAreas />,
+    element: <InvestmentImmigration />,
   },
   {
     path: "practice-areas/employment-based-immigration",
-    element: <PracticeAreas />,
+    element: <EmploymentBasedImmigration />,
   },
   {
     path: "practice-areas/deportation-defense",
-    element: <PracticeAreas />,
+    element: <DeportationDefense />,
   },
 
   {
     path: "reviews",
-    element: <PracticeAreas />,
+    element: <Reviews />,
   },
   {
     path: "contact",
-    element: <PracticeAreas />,
+    element: <Contact />,
+  },
+  {
+    path: "privacy-policy",
+    element: <PrivacyPolicy />,
   },
 ]);
