@@ -1895,7 +1895,7 @@ fieldset li label:not([class*="fnt_"]) {
 .lt-bg .bg-bx.lk-bg::before,
 .lt-bg .bg-bx.lk-bg .bg-bx.lk-bg::before,
 .dk-bg .bg-bx.ulk-bg::before {
-  background-color: #99a8b5;
+  background-color: #191919;
 }
 .lt-bg .bg-bx.lk-bg.alt-bg::before,
 .dk-bg .bg-bx.ulk-bg.alt-bg::before {
@@ -1936,7 +1936,7 @@ fieldset li label:not([class*="fnt_"]) {
   background-color: #292929;
 }
 .lt-bg.alt-bg .bg-bx.lk-bg::before {
-  background-color: #99a8b5;
+  background-color: #191919;
 }
 .clr-btn {
   color: #a0a0a0;
@@ -1995,7 +1995,7 @@ fieldset li label:not([class*="fnt_"]) {
 }
 .lt-bg [class*="-light"],
 .dk-bg .bg-bx.ulk-bg [class*="-light"] {
-  fill: #99a8b5;
+  fill: #191919;
 }
 .lt-bg [class*="-dark"],
 .dk-bg .bg-bx.ulk-bg [class*="-dark"] {
@@ -2027,7 +2027,7 @@ fieldset li label:not([class*="fnt_"]) {
 }
 .dk-bg [class*="-dark"],
 .lt-bg .bg-bx.ulk-bg [class*="-dark"] {
-  fill: #99a8b5;
+  fill: #191919;
 }
 .dk-bg [class*="-primary"],
 .lt-bg .bg-bx.ulk-bg [class*="-primary"] {
@@ -2107,7 +2107,7 @@ fieldset li label:not([class*="fnt_"]) {
 .dk-bg .btn-clr.active:not(.no-hvr),
 .lt-bg .bg-bx.ulk-bg .btn-clr.active:not(.no-hvr),
 .lt-bg .bg-bx.ulk-bg .btn-clr.active:not(.no-hvr) {
-  background-color: #99a8b5;
+  background-color: #191919;
   color: #191919;
 }
 .active.bg-bx.btn-clr-hvr:not(.no-hvr),
@@ -2577,7 +2577,7 @@ section.dk-bg header > *:nth-child(2) u {
   .lt-bg .bg-bx.ulk-bg .btn-clr:not(.no-hvr):focus,
   .lt-bg .bg-bx.ulk-bg a:hover .btn-clr:not(.no-hvr),
   .lt-bg .bg-bx.ulk-bg a:focus .btn-clr:not(.no-hvr) {
-    background-color: #99a8b5;
+    background-color: #191919;
     color: #191919;
   }
   .bg-bx.btn-clr-hvr:not(.no-hvr):hover::before,
@@ -3565,11 +3565,11 @@ fieldset .sgt .inp-sgt .tgs > li {
   visibility: visible;
 }
 .lt-bg .validation {
-  color: #99a8b5;
+  color: #191919;
   background: rgba(0, 0, 0, 0.8);
 }
 .dk-bg .validation {
-  color: #99a8b5;
+  color: #191919;
   background: rgba(0, 0, 0, 0.8);
 }
 .invalid[data-validity="valueMissing"]

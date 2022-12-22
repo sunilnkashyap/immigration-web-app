@@ -16,72 +16,6 @@ export const ServicesSection = () => {
     >
       <div className="mn_wd rsp_pd rsp_opn-tp">
         <div className="flx-ato-rsp-mgd-b f_sb f_m">
-          <div className="half" data-content="true">
-            <header className="mrg_bt" id="ServicesV3Header">
-              <h1>Anaheim Immigration Attorney</h1>
-            </header>
-            <div className="cnt-stl" id="ServicesV3Content">
-              <h2>
-                <span style={{ color: "#000000" }}>
-                  Accessible and Personalized Immigration Representation
-                </span>
-              </h2>
-              <p>
-                <span style={{ color: "#000000" }}>
-                  If you are experiencing any type of immigration problem, you
-                  deserve a compassionate legal advocate who understands what
-                  you are going through. At the Law Offices of Fady Eskandar we
-                  can help you navigate the United States immigration system
-                  with confidence.&nbsp;
-                </span>
-                <a href="https://www.immigrationattorneyhelp.com/our-firm/fady-eskandar/">
-                  <span style={{ color: "#000000" }}>Our founder</span>
-                </a>
-                <span style={{ color: "#000000" }}>
-                  is an immigrant himself and can provide the honest,
-                  communicative representation you need to succeed.
-                </span>
-              </p>
-              <p>
-                <span style={{ color: "#000000" }}>
-                  <strong>
-                    Our Anaheim immigration lawyer strives to offer an
-                    exceptional level of service to people from all walks of
-                    life
-                  </strong>
-                  . We know how to effectively approach a wide variety of
-                  immigration scenarios and will work tirelessly to help you
-                  achieve your short- and long-term objectives. Your
-                  satisfaction is our top priority, and we will utilize the full
-                  extent of our firm’s resources as we work to favorably resolve
-                  your case.
-                </span>
-              </p>
-              <hr />
-              <p style={{ textAlign: "center" }}>
-                <span style={{ color: "#000000" }}>
-                  <strong>Call </strong>
-                </span>
-                <a href="tel:(714) 909-2127" id="ServicesV3_1">
-                  <span style={{ color: "#000000" }}>
-                    <strong>(714) 909-2127</strong>
-                  </span>
-                </a>
-                <span style={{ color: "#000000" }}>
-                  <strong>
-                    or&nbsp;contact us online to request an initial
-                    consultation. Flexible payment options are available.
-                  </strong>
-                </span>
-              </p>
-              <hr />
-              <p>
-                <br />
-                &nbsp;
-              </p>
-            </div>
-            <div className="btn-bx mrg_tp" id="ServicesV3Button"></div>
-          </div>
           <div className="half">
             <div
               className="srv-lst ui-repeater"
@@ -230,6 +164,72 @@ export const ServicesSection = () => {
                 </button>
               </div>
             </div>
+          </div>
+          <div className="half" data-content="true">
+            <header className="mrg_bt" id="ServicesV3Header">
+              <h1>Anaheim Immigration Attorney</h1>
+            </header>
+            <div className="cnt-stl" id="ServicesV3Content">
+              <h2>
+                <span style={{ color: "#000000" }}>
+                  Accessible and Personalized Immigration Representation
+                </span>
+              </h2>
+              <p>
+                <span style={{ color: "#000000" }}>
+                  If you are experiencing any type of immigration problem, you
+                  deserve a compassionate legal advocate who understands what
+                  you are going through. At the Law Offices of Fady Eskandar we
+                  can help you navigate the United States immigration system
+                  with confidence.&nbsp;
+                </span>
+                <a href="https://www.immigrationattorneyhelp.com/our-firm/fady-eskandar/">
+                  <span style={{ color: "#000000" }}>Our founder</span>
+                </a>
+                <span style={{ color: "#000000" }}>
+                  is an immigrant himself and can provide the honest,
+                  communicative representation you need to succeed.
+                </span>
+              </p>
+              <p>
+                <span style={{ color: "#000000" }}>
+                  <strong>
+                    Our Anaheim immigration lawyer strives to offer an
+                    exceptional level of service to people from all walks of
+                    life
+                  </strong>
+                  . We know how to effectively approach a wide variety of
+                  immigration scenarios and will work tirelessly to help you
+                  achieve your short- and long-term objectives. Your
+                  satisfaction is our top priority, and we will utilize the full
+                  extent of our firm’s resources as we work to favorably resolve
+                  your case.
+                </span>
+              </p>
+              <hr />
+              <p style={{ textAlign: "center" }}>
+                <span style={{ color: "#000000" }}>
+                  <strong>Call </strong>
+                </span>
+                <a href="tel:(714) 909-2127" id="ServicesV3_1">
+                  <span style={{ color: "#000000" }}>
+                    <strong>(714) 909-2127</strong>
+                  </span>
+                </a>
+                <span style={{ color: "#000000" }}>
+                  <strong>
+                    or&nbsp;contact us online to request an initial
+                    consultation. Flexible payment options are available.
+                  </strong>
+                </span>
+              </p>
+              <hr />
+              <p>
+                <br />
+                &nbsp;
+              </p>
+            </div>
+            <div className="btn-bx mrg_tp" id="ServicesV3Button"></div>
           </div>
         </div>
       </div>

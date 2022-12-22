@@ -14,6 +14,7 @@ export const FamilyBasedImmigrationContent = () => {
       id="TwoColumnLayoutAlt"
     >
       <div className="mn_wd rsp_pd flx-ato-rsp-mgd f_sb f_rev rsp_opn-tp">
+        <PracticeAreasAside />
         <div className="hlf-big cnt-zn" id="ContentZone">
           <div className="cnt-stl" id="MainContent" data-content="true">
             <h1>Anaheim Family-Based Immigration Attorney</h1>
@@ -178,8 +179,6 @@ export const FamilyBasedImmigrationContent = () => {
             <p>&nbsp;</p>
           </div>
         </div>
-
-        <PracticeAreasAside />
       </div>
     </section>
   );

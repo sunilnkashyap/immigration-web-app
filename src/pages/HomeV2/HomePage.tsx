@@ -25,12 +25,10 @@ export const HomePageV2 = () => {
 
       <Box>
         <HeroBanner />
-
-        <ServicesSection />
         <PracticeAreasSection />
-        <LegalAdvocacySection />
-
+        <ServicesSection />
         <ReadOurReviews />
+        <LegalAdvocacySection />
 
         <FeedSection />
         <ContactUs />
