@@ -10,6 +10,7 @@ import {
   EmploymentBasedImmigration,
   DeportationDefense,
 } from "../pages";
+import { ComingSoon } from "../pages/ComingSoon";
 import { Contact } from "../pages/Contact";
 import { HomePageV2 } from "../pages/HomeV2";
 import { FadyEskandar, OurFirm } from "../pages/OurFirm";
@@ -19,7 +20,7 @@ import { Reviews } from "../pages/Reviews";
 export const appRouter = createBrowserRouter([
   {
     path: "/",
-    element: <HomePageV2 />,
+    element: <ComingSoon />,
   },
   {
     path: "home",
