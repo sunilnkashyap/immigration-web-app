@@ -61,15 +61,16 @@ export const ComingSoon = () => {
           id="slider"
           className="slider-element min-vh-100 dark include-header"
           style={{
-            background: "url(/assets/static.png) center center no-repeat",
+            background: "url(/assets/static.jpg) center center no-repeat",
           }}
         >
           <div className="slider-inner">
             <div className="vertical-middle">
               <div className="container py-5">
                 <div className="heading-block text-center border-bottom-0">
-                  <h1 style={{ fontSize: 44 }}>Law Offices of Fady Eskandar</h1>
                   <h1>Coming Soon</h1>
+
+                  <h1 style={{ fontSize: 38 }}>Law Offices of Fady Eskandar</h1>
 
                   <span style={{ fontWeight: "bold" }}>
                     Please check back again within Some Days as We're Pretty
@@ -78,17 +79,19 @@ export const ComingSoon = () => {
 
                   <br />
                   <br />
+                  <br />
+                  <br />
                   <span style={{ fontWeight: "bold" }}>
                     Address: 421 N. Brookhurst St. Ste 200, Anaheim, CA 92801
-                  </span>
-
-                  <span style={{ fontWeight: "bold" }}>
+                    <br />
                     Phone Number: (714) 729-3303
-                  </span>
-
-                  <span style={{ fontWeight: "bold" }}>
+                    <br />
                     Email Address: info@immigrationattorneyhelp.com
                   </span>
+
+                  <span style={{ fontWeight: "bold" }}></span>
+
+                  <span style={{ fontWeight: "bold" }}></span>
                 </div>
                 <div
                   id="countdown-ex1"
@@ -115,7 +118,7 @@ export const ComingSoon = () => {
                     >
                       <div className="">
                         <a
-                          className="btn btn-info"
+                          className="btn btn-info btn-lg"
                           href="https://eskandarlaw.square.site/"
                         >
                           Book a consultation Now
