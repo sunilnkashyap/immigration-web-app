@@ -38,27 +38,27 @@ export const PracticeAreasSection = () => {
                 </span>
               </li>
               <li>
-                <a href="https://www.immigrationattorneyhelp.com/practice-areas/family-based-immigration/">
+                <Link to="/practice-areas/family-based-immigration">
                   <span style={{ color: "#000000" }}>
-                    <strong>Family-Based Immigration -</strong>
+                    <strong>
+                      {t("header.links.familyBasedImmigration")} -
+                    </strong>
                   </span>
-                </a>
+                </Link>
                 <span style={{ color: "#000000" }}>
-                  <strong> </strong>United States citizens and lawful permanent
-                  residents can sponsor qualifying relatives for green cards.
+                  <strong> </strong>
+                  {t("practiceAreas.familyBasedImmigration")}
                 </span>
               </li>
               <li>
-                <a href="https://www.immigrationattorneyhelp.com/practice-areas/humanitarian-relief/">
+                <Link to="/practice-areas/humanitarian-relief">
                   <span style={{ color: "#000000" }}>
-                    <strong>Humanitarian Relief -</strong>
+                    <strong> {t("header.links.humanitarianRelief")} -</strong>
                   </span>
-                </a>
+                </Link>
                 <span style={{ color: "#000000" }}>
-                  <strong> </strong>Several humanitarian programs are
-                  potentially available to immigrants who were victims of abuse
-                  or violent crimes, facing natural disasters, serious medical
-                  issues, and other emergencies.
+                  <strong> </strong>
+                  {t("practiceAreas.humanitarianRelief")}
                 </span>
               </li>
               <li>

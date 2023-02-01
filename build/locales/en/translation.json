@@ -1,0 +1,35 @@
+{
+  "language": "عربى",
+  "phoneNumber": "(714) 729-3303",
+  "header": {
+    "callUs": "Call Us Today to Take Control of Your Journey",
+    "links": {
+      "home": "Home",
+      "ourFirm": "Our Firm",
+      "fadyEskandar": "Fady Eskandar",
+      "practiceAreas": "Practice Areas",
+      "asylum": "Asylum",
+      "familyBasedImmigration": "Family Based Immigration",
+      "humanitarianRelief": "Humanitarian Relief",
+      "citizenshipNaturalization": "Citizenship & Naturalization",
+      "investmentImmigration": "Investment Immigration",
+      "employmentBasedImmigration": "Employment Based Immigration",
+      "deportationDefense": "Deportation Defense",
+      "reviews": "Reviews",
+      "contact": "Contact"
+    }
+  },
+  "hero": {
+    "title": "The Law Offices of Fady Eskandar",
+    "subTitle": "Practicing Immigration Law",
+    "link": "Request a consultation"
+  },
+  "practiceAreas": {
+    "title": "Our Practice Areas",
+    "description": "Our team represents individuals currently in the United States who need help adjusting their immigration status. Whether you are looking to request asylum or want a legal professional present at your naturalization interview, we can tailor our services to meet your unique needs.",
+    "boldHeading": "Our Anaheim immigration attorney can assist you with cases involving:",
+    "asylum": "If you have been persecuted or fear future persecution in your home country on certain protected grounds, you may be able to obtain protection in the United States.",
+    "familyBasedImmigration": "United States citizens and lawful permanent residents can sponsor qualifying relatives for green cards.",
+    "humanitarianRelief": "Several humanitarian programs are potentially available to immigrants who were victims of abuse or violent crimes, facing natural disasters, serious medical issues, and other emergencies."
+  }
+}
