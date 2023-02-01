@@ -42,8 +42,8 @@ export const AsylumContent = () => {
                 has been through the immigration process, please call our firm
                 at{" "}
               </strong>
-              <a href="tel:(714) 909-2127" id="MainContent_1">
-                <strong>(714) 909-2127</strong>
+              <a href="tel:(714) 729-3303" id="MainContent_1">
+                <strong>(714) 729-3303</strong>
               </a>
               <strong>.</strong>
             </p>
@@ -156,8 +156,8 @@ export const AsylumContent = () => {
             <hr />
             <p className="MsoNormal" style={{ textAlign: "center" }}>
               <strong>Call us at </strong>
-              <a href="tel:(714) 909-2127" id="MainContent_3">
-                <strong>(714) 909-2127</strong>
+              <a href="(714) 729-3303" id="MainContent_3">
+                <strong>(714) 729-3303</strong>
               </a>
               <strong> or&nbsp;</strong>
               <a href="https://www.immigrationattorneyhelp.com/contact/">

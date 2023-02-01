@@ -1,7 +1,27 @@
 {
-  "home" : {
-    "hero": {
-      "title": "The Law Offices of Fady Eskandar"
+  "language": "عربى",
+  "phoneNumber": "(714) 729-3303",
+  "header": {
+    "callUs": "Call Us Today to Take Control of Your Journey",
+    "links": {
+      "home": "Home",
+      "ourFirm": "Our Firm",
+      "fadyEskandar": "Fady Eskandar",
+      "practiceAreas": "Practice Areas",
+      "asylum": "Asylum",
+      "familyBasedImmigration": "Family Based Immigration",
+      "humanitarianRelief": "Humanitarian Relief",
+      "citizenshipNaturalization": "Citizenship & Naturalization",
+      "investmentImmigration": "Investment Immigration",
+      "employmentBasedImmigration": "Employment Based Immigration",
+      "deportationDefense": "Deportation Defense",
+      "reviews": "Reviews",
+      "contact": "Contact"
     }
+  },
+  "hero": {
+    "title": "The Law Offices of Fady Eskandar",
+    "subTitle": "Practicing Immigration Law",
+    "link": "Request a consultation"
   }
 }

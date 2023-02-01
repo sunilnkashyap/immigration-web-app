@@ -72,11 +72,6 @@ export const ComingSoon = () => {
 
                   <h1 style={{ fontSize: 38 }}>Law Offices of Fady Eskandar</h1>
 
-                  <span style={{ fontWeight: "bold" }}>
-                    Please check back again within Some Days as We're Pretty
-                    Close
-                  </span>
-
                   <br />
                   <br />
                   <br />

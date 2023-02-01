@@ -68,8 +68,8 @@ export const HumanitarianReliefContent = () => {
                 , or accessing another humanitarian relief program in the United
                 States, please call us at{" "}
               </strong>
-              <a href="tel:(714) 909-2127" id="MainContent_1">
-                <strong>(714) 909-2127</strong>
+              <a href="tel:(714) 729-3303" id="MainContent_1">
+                <strong>(714) 729-3303</strong>
               </a>
               <strong> today.&nbsp;</strong>
             </p>
@@ -225,8 +225,8 @@ export const HumanitarianReliefContent = () => {
                 If you need help, do not wait. Instead, call Law Offices of Fady
                 Eskandar at{" "}
               </strong>
-              <a href="tel:(714) 909-2127" id="MainContent_3">
-                <strong>(714) 909-2127</strong>
+              <a href="tel:(714) 729-3303" id="MainContent_3">
+                <strong>(714) 729-3303</strong>
               </a>
               <strong> or&nbsp;</strong>
               <a href="https://www.immigrationattorneyhelp.com/contact/">

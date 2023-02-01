@@ -20,7 +20,7 @@ import { Reviews } from "../pages/Reviews";
 export const appRouter = createBrowserRouter([
   {
     path: "/",
-    element: <ComingSoon />,
+    element: <HomePageV2 />,
   },
   {
     path: "home",

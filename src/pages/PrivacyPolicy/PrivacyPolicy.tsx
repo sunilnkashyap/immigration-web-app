@@ -98,7 +98,7 @@ export const PrivacyPolicy = () => {
                       policy, you should contact us immediately via telephone at
                     </strong>
                     <strong>
-                      (714) 909-2127 or via mail Attn: Privacy Officer, 421 N
+                      (714) 729-3303 or via mail Attn: Privacy Officer, 421 N
                       Brookhurst St. Ste 200, Anaheim, CA 92801.
                     </strong>
                   </p>

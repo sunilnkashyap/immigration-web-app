@@ -1,6 +1,9 @@
 import React from "react";
+import { useTranslation } from "react-i18next";
+import { Link } from "react-router-dom";
 
 export const PracticeAreasSection = () => {
+  const { t } = useTranslation();
   return (
     <section
       className="cnt v1 lt-bg pd_v-60 rsp_opn-tp rsp_opn-bt"
@@ -8,22 +11,15 @@ export const PracticeAreasSection = () => {
     >
       <div className="mn_wd rsp_pd rsp_opn-tp" data-content="true">
         <header className="mrg_bt-60 ta_c" id="ContentV1AltHeader">
-          <h3>Our Practice Areas</h3>
+          <h3>{t("practiceAreas.title")}</h3>
           <p>
             <span style={{ color: "#000000" }}>
-              Our team represents individuals currently in the United States who
-              need help adjusting their immigration status. Whether you are
-              looking to request asylum or want a legal professional present at
-              your naturalization interview, we can tailor our services to meet
-              your unique needs.
+              {t("practiceAreas.description")}
             </span>
           </p>
           <p>
             <span style={{ color: "#000000" }}>
-              <strong>
-                Our Anaheim immigration attorney can assist you with cases
-                involving:
-              </strong>
+              <strong>{t("practiceAreas.boldHeading")}</strong>
             </span>
           </p>
         </header>
@@ -31,15 +27,14 @@ export const PracticeAreasSection = () => {
           <div className="cnt-stl half" id="ContentV1AltContent">
             <ul>
               <li>
-                <a href="https://www.immigrationattorneyhelp.com/practice-areas/asylum/">
+                <Link to="/practice-areas/asylum">
                   <span style={{ color: "#000000" }}>
-                    <strong>Asylum -</strong>
+                    <strong>{t("header.links.asylum")} -</strong>
                   </span>
-                </a>
+                </Link>
                 <span style={{ color: "#000000" }}>
-                  <strong> </strong>If you have been persecuted or fear future
-                  persecution in your home country on certain protected grounds,
-                  you may be able to obtain protection in the United States.
+                  <strong> </strong>
+                  {t("practiceAreas.asylum")}
                 </span>
               </li>
               <li>

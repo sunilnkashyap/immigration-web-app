@@ -1,6 +1,9 @@
 import React from "react";
+import { useTranslation } from "react-i18next";
+import { Link } from "react-router-dom";
 
 export const HeroBanner = () => {
+  const { t } = useTranslation();
   return (
     <section
       className="mstg v3 lt-bg bg-image show-20"
@@ -12,15 +15,9 @@ export const HeroBanner = () => {
         role="presentation"
         data-role="picture"
       >
-        <source
-          media="(max-width: 500px)"
-          srcSet="/assets/images/hero-bg-mobile.jpg"
-        />
-        <source
-          media="(max-width: 1024px)"
-          srcSet="/assets/images/hero-bg-tablet.jpg"
-        />
-        <img src="/assets/images/hero-bg.jpg" alt="" />
+        <source media="(max-width: 500px)" srcSet="/assets/hero-banner.jpg" />
+        <source media="(max-width: 1024px)" srcSet="/assets/hero-banner.jpg" />
+        <img src="/assets/hero-banner.jpg" alt="" />
       </picture>
       <div className="mn_wd rsp_pd-h">
         <div className="flx-ato-rsp f_rev f_sb">
@@ -52,18 +49,13 @@ export const HeroBanner = () => {
             id="MainstageV2Info"
           >
             <div className="bg-bx lk-bg pd_h-30 pd_v-40 ta_r">
-              <strong className="fnt_t-big">
-                The Law Offices of Fady Eskandar
-              </strong>
+              <strong className="fnt_t-big">{t("hero.title")}</strong>
 
-              <span className="mrg_tp-40 blk">Practicing Immigration Law</span>
+              <span className="mrg_tp-40 blk">{t("hero.subTitle")}</span>
 
-              <a
-                className="btn v1"
-                href="https://www.immigrationattorneyhelp.com/contact/"
-              >
-                Request a consultation
-              </a>
+              <Link to="/contact" className="btn v1">
+                {t("hero.link")}
+              </Link>
             </div>
           </div>
         </div>

@@ -53,8 +53,8 @@ export const ImmigrationServicesSection = () => {
             <hr />
             <p className="MsoNormal" style={{ textAlign: "center" }}>
               <strong>Call </strong>
-              <a href="tel:(714) 909-2127" id="ContentV1AltMainContent_1">
-                <strong>(714) 909-2127</strong>
+              <a href="tel:(714) 729-3303" id="ContentV1AltMainContent_1">
+                <strong>(714) 729-3303</strong>
               </a>
               <strong>
                 to schedule an initial consultation. We offer flexible payment

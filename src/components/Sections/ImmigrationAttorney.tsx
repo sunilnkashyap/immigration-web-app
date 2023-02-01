@@ -46,7 +46,7 @@ export const ImmigrationAttorney = () => {
 
       <Paragraph sx={{ textAlign: "center" }}>
         <b>
-          Call (714) 909-2127 or contact us online to request an initial
+          Call (714) 729-3303 or contact us online to request an initial
           consultation. Flexible payment options are available.
         </b>
       </Paragraph>

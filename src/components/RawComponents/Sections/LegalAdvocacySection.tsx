@@ -49,9 +49,9 @@ export const LegalAdvocacySection = () => {
                     Discuss your immigration goals with us today. Call
                   </strong>
                 </span>
-                <a href="tel:(714) 909-2127" id="ValuesV1_1">
+                <a href="tel:(714) 729-3303" id="ValuesV1_1">
                   <span style={{ color: "#000000" }}>
-                    <strong>(714) 909-2127</strong>
+                    <strong>(714) 729-3303</strong>
                   </span>
                 </a>
                 <span style={{ color: "#000000" }}>

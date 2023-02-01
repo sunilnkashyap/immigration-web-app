@@ -4,15 +4,11 @@ import { useTranslation } from "react-i18next";
 import {
   Header,
   Footer,
-  ServicesGridSection,
-  ImmigrationServicesSection,
-  PracticeAreasBannerSection,
-  OurServiceAreasSection,
-  ReadOurReviews,
   ContactUsDetailed,
   ContactMap,
 } from "../../components/RawComponents";
 import { ScrollToTop } from "../../components/ScrollToTop";
+import { ContactBannerSection } from "../../components/RawComponents/Sections/ContactBannerSection";
 
 export const Contact = () => {
   const { t, i18n } = useTranslation();
@@ -24,7 +20,7 @@ export const Contact = () => {
       </Box>
 
       <Box>
-        <PracticeAreasBannerSection title="Contact" />
+        <ContactBannerSection title="Contact" />
 
         <ContactUsDetailed />
 

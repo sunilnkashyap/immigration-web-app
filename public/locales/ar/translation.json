@@ -1,7 +1,27 @@
 {
-  "home" : {
-    "hero": {
-      "title": "كاتب المحامي فادي اسكندر"
+  "language": "English",
+  "phoneNumber": "(714) 729-3303",
+  "header": {
+    "callUs": "اتصل بنا اليوم لتتحكم في رحلتك",
+    "links": {
+      "home": "مسكن",
+      "ourFirm": "شركتنا",
+      "fadyEskandar": "فادي اسكندر",
+      "practiceAreas": "مجالات الممارسة",
+      "asylum": "اللجوء",
+      "familyBasedImmigration": "الهجرة القائمة على الأسرة",
+      "humanitarianRelief": "الإغاثة الإنسانية",
+      "citizenshipNaturalization": "المواطنة والتجنس",
+      "investmentImmigration": "هجرة الاستثمار",
+      "employmentBasedImmigration": "الهجرة القائمة على العمل",
+      "deportationDefense": "الدفاع عن الإبعاد",
+      "reviews": "المراجعات",
+      "contact": "اتصال"
     }
+  },
+  "hero": {
+    "title": "مكاتب المحاماة فادي اسكندر",
+    "subTitle": "ممارسة قانون الهجرة",
+    "link": "اطلب استشارة"
   }
 }

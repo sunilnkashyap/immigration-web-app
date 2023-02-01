@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { useTranslation } from "react-i18next";
 import { Link, useLocation } from "react-router-dom";
 
 import logoImage from "../../../assets/logo/logo.png";
@@ -6,7 +7,7 @@ import logo2Image from "../../../assets/logo/logo2.png";
 
 export const Header = () => {
   const location = useLocation();
-
+  const { t, i18n } = useTranslation();
   const [accessibilityMenu, setAccessibilityMenu] = useState(false);
   const [mainMenu, setMainMenu] = useState(false);
   const toggleAccessibilityMenu = () => {
@@ -20,6 +21,14 @@ export const Header = () => {
   const getSelectedClass = (matchPath: string) => {
     const locationArr = location.pathname.split("/");
     return locationArr[1] == matchPath ? " selected" : "";
+  };
+
+  const toggleLanguage = () => {
+    if (i18n.language == "en") {
+      i18n.changeLanguage("ar");
+    } else {
+      i18n.changeLanguage("en");
+    }
   };
 
   return (
@@ -168,7 +177,7 @@ export const Header = () => {
                 </nav>
                 <div className="bx flx f_m" id="HeaderV1Tagline">
                   <span className="tgl fnt_t-6 fnt_tc-6 blk mrg_rt-40">
-                    Call Us Today to Take Control of Your Journey
+                    {t("header.callUs")}
                   </span>
 
                   <a
@@ -176,7 +185,7 @@ export const Header = () => {
                     href="tel:7149092127"
                     id="HeaderV1_2"
                   >
-                    714-909-2127
+                    {t("phoneNumber")}
                   </a>
                 </div>
               </div>
@@ -232,7 +241,9 @@ export const Header = () => {
                       to="/"
                       className="rg_rt-90 ato clr-swp str blk ta_l rlt dt-nv"
                     >
-                      <span className="rlt blk rlt pd_tp pd_bt">Home</span>
+                      <span className="rlt blk rlt pd_tp pd_bt">
+                        {t("header.links.home")}
+                      </span>
                     </Link>
                   </li>
                   <li
@@ -245,7 +256,9 @@ export const Header = () => {
                       to="/our-firm"
                       className="mrg_rt-90 mrg_lt-90 ato clr-swp str blk ta_l four-fifths rlt dt-nv"
                     >
-                      <span className="rlt blk rlt pd_tp pd_bt">Our Firm</span>
+                      <span className="rlt blk rlt pd_tp pd_bt">
+                        {t("header.links.ourFirm")}
+                      </span>
                     </Link>
 
                     <span
@@ -277,7 +290,7 @@ export const Header = () => {
                           to="/our-firm/fady-eskandar"
                           className="clr-swp ato blk pd_bt-30 pd_tp-30"
                         >
-                          Fady Eskandar
+                          {t("header.links.fadyEskandar")}
                         </Link>
                       </li>
                     </ul>
@@ -288,7 +301,7 @@ export const Header = () => {
                       className="mrg_rt-90 mrg_lt-90 ato clr-swp str blk ta_l four-fifths rlt dt-nv"
                     >
                       <span className="rlt blk rlt pd_tp pd_bt">
-                        Practice Areas
+                        {t("header.links.practiceAreas")}
                       </span>
                     </Link>
 
@@ -321,7 +334,7 @@ export const Header = () => {
                           to="/practice-areas/asylum"
                           className="clr-swp ato blk pd_bt-30 pd_tp-30"
                         >
-                          Asylum
+                          {t("header.links.asylum")}
                         </Link>
                       </li>
                       <li className=" " role="menuitem" data-closing="true">
@@ -329,7 +342,7 @@ export const Header = () => {
                           to="/practice-areas/family-based-immigration"
                           className="clr-swp ato blk pd_bt-30 pd_tp-30"
                         >
-                          Family Based Immigration
+                          {t("header.links.familyBasedImmigration")}
                         </Link>
                       </li>
                       <li className=" " role="menuitem" data-closing="true">
@@ -337,7 +350,7 @@ export const Header = () => {
                           to="/practice-areas/humanitarian-relief"
                           className="clr-swp ato blk pd_bt-30 pd_tp-30"
                         >
-                          Humanitarian Relief
+                          {t("header.links.humanitarianRelief")}
                         </Link>
                       </li>
                       <li className=" " role="menuitem" data-closing="true">
@@ -345,7 +358,7 @@ export const Header = () => {
                           to="/practice-areas/citizenship-naturalization"
                           className="clr-swp ato blk pd_bt-30 pd_tp-30"
                         >
-                          Citizenship &amp; Naturalization
+                          {t("header.links.citizenshipNaturalization")}
                         </Link>
                       </li>
                       <li className=" " role="menuitem" data-closing="true">
@@ -353,7 +366,7 @@ export const Header = () => {
                           to="/practice-areas/investment-immigration"
                           className="clr-swp ato blk pd_bt-30 pd_tp-30"
                         >
-                          Investment Immigration
+                          {t("header.links.investmentImmigration")}
                         </Link>
                       </li>
                       <li className=" " role="menuitem" data-closing="true">
@@ -361,7 +374,7 @@ export const Header = () => {
                           to="/practice-areas/employment-based-immigration"
                           className="clr-swp ato blk pd_bt-30 pd_tp-30"
                         >
-                          Employment Based Immigration
+                          {t("header.links.employmentBasedImmigration")}
                         </Link>
                       </li>
                       <li className=" " role="menuitem" data-closing="true">
@@ -369,7 +382,7 @@ export const Header = () => {
                           to="/practice-areas/deportation-defense"
                           className="clr-swp ato blk pd_bt-30 pd_tp-30"
                         >
-                          Deportation Defense
+                          {t("header.links.deportationDefense")}
                         </Link>
                       </li>
                     </ul>
@@ -379,7 +392,9 @@ export const Header = () => {
                       to="/reviews"
                       className="mrg_rt-90 mrg_lt-90 ato clr-swp str blk ta_l rlt dt-nv"
                     >
-                      <span className="rlt blk rlt pd_tp pd_bt">Reviews</span>
+                      <span className="rlt blk rlt pd_tp pd_bt">
+                        {t("header.links.reviews")}
+                      </span>
                     </Link>
                   </li>
                   <li className="flx ato rlt" role="menuitem">
@@ -387,15 +402,19 @@ export const Header = () => {
                       to="/contact"
                       className="mrg_rt-90 mrg_lt-90 ato clr-swp str blk ta_l rlt dt-nv"
                     >
-                      <span className="rlt blk rlt pd_tp pd_bt">Contact</span>
+                      <span className="rlt blk rlt pd_tp pd_bt">
+                        {t("header.links.contact")}
+                      </span>
                     </Link>
                   </li>
                   <li>
                     <a
                       className="mrg_lt-90 ato clr-swp str blk ta_l rlt dt-nv"
-                      href="https://www.immigrationattorneyhelp.com/arabic"
+                      onClick={toggleLanguage}
                     >
-                      <span className="rlt blk rlt pd_tp pd_bt">عربى</span>
+                      <span className="rlt blk rlt pd_tp pd_bt">
+                        {t("language")}
+                      </span>
                     </a>
                   </li>
                 </ul>

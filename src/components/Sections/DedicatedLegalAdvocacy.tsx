@@ -41,7 +41,7 @@ export const DedicatedLegalAdvocacy = () => {
 
       <Paragraph sx={{ textAlign: "center" }}>
         <b>
-          Discuss your immigration goals with us today. Call (714) 909-2127 or
+          Discuss your immigration goals with us today. Call (714) 729-3303 or
           contact us online to get started.
         </b>
       </Paragraph>

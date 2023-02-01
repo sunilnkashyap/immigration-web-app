@@ -101,8 +101,8 @@ export const OurServiceAreasSection = () => {
               <hr />
               <p className="MsoNormal" style={{ textAlign: "center" }}>
                 <strong>Call </strong>
-                <a href="tel:(714) 909-2127" id="ContentV2Alt_1">
-                  <strong>(714) 909-2127</strong>
+                <a href="tel:(714) 729-3303" id="ContentV2Alt_1">
+                  <strong>(714) 729-3303</strong>
                 </a>
                 <strong> or </strong>
                 <a href="https://www.immigrationattorneyhelp.com/contact/">
