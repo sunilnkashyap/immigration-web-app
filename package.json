@@ -14,6 +14,7 @@
     "@types/node": "^16.18.3",
     "@types/react": "^18.0.25",
     "@types/react-dom": "^18.0.8",
+    "copy-files-from-to": "^3.8.0",
     "husky": "^8.0.2",
     "i18next": "^22.0.6",
     "i18next-browser-languagedetector": "^7.0.1",
@@ -30,7 +31,7 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build",
+    "build": "react-scripts build && copy-files-from-to",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "prepare": "husky install",
@@ -77,5 +78,11 @@
     "eslint-plugin-promise": "^6.1.1",
     "eslint-plugin-react": "^7.31.11",
     "typescript": "^4.9.3"
-  }
+  },
+  "copyFiles": [
+    {
+      "from": ".htaccess",
+      "to": "build/"
+    }
+  ]
 }

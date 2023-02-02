@@ -16,7 +16,9 @@
       "employmentBasedImmigration": "Employment Based Immigration",
       "deportationDefense": "Deportation Defense",
       "reviews": "Reviews",
-      "contact": "Contact"
+      "contact": "Contact",
+      "writsOfMandamus": "Writs of Mandamus",
+      "hardshipWaivers": "Hardship Waivers"
     }
   },
   "hero": {
@@ -30,6 +32,13 @@
     "boldHeading": "Our Anaheim immigration attorney can assist you with cases involving:",
     "asylum": "If you have been persecuted or fear future persecution in your home country on certain protected grounds, you may be able to obtain protection in the United States.",
     "familyBasedImmigration": "United States citizens and lawful permanent residents can sponsor qualifying relatives for green cards.",
-    "humanitarianRelief": "Several humanitarian programs are potentially available to immigrants who were victims of abuse or violent crimes, facing natural disasters, serious medical issues, and other emergencies."
+    "humanitarianRelief": "Several humanitarian programs are potentially available to immigrants who were victims of abuse or violent crimes, facing natural disasters, serious medical issues, and other emergencies.",
+    "citizenshipNaturalization": "Lawful permanent residents can naturalize and become citizens after passing a two-part exam and meeting several other requirements.",
+    "investmentImmigration": "Green cards are available to immigrants who make a large investment in a U.S.-based business that generates at least ten jobs. There is also a non-immigrant visa option for foreign nationals from certain countries to obtain an E2 visa and allow them to temporarily stay in the US to manage their businesses.",
+    "employmentBasedImmigration": "U.S.-based employers can sponsor immigrants for green cards after obtaining a labor certification.",
+    "deportationDefense": "Several relief options may be available to immigrants who have been placed in removal proceedings.",
+    "writsOfMandamus": "If United States Citizenship and Immigration Services (USCIS) refuses to make a timely decision on your case, a Writ of Mandamus can force them to act.",
+    "hardshipWaivers": "Extreme hardship waivers can help you overcome inadmissibility obstacles and access immigration benefits.",
+    "footerDescription": "Every practice area we handle involves many complex steps. Having reliable representation is the key to making it through these steps."
   }
 }

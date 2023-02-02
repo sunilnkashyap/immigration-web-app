@@ -62,30 +62,26 @@ export const PracticeAreasSection = () => {
                 </span>
               </li>
               <li>
-                <a href="https://www.immigrationattorneyhelp.com/practice-areas/citizenship-naturalization/">
+                <Link to="/practice-areas/citizenship-naturalization">
                   <span style={{ color: "#000000" }}>
-                    <strong>Citizenship -</strong>
+                    <strong>
+                      {t("header.links.citizenshipNaturalization")} -
+                    </strong>
                   </span>
-                </a>
+                </Link>
                 <span style={{ color: "#000000" }}>
-                  <strong> </strong>Lawful permanent residents can naturalize
-                  and become citizens after passing a two-part exam and meeting
-                  several other requirements.
+                  <strong> </strong>{" "}
+                  {t("practiceAreas.citizenshipNaturalization")}
                 </span>
               </li>
               <li>
-                <a href="https://www.immigrationattorneyhelp.com/practice-areas/investment-immigration/">
+                <Link to="/practice-areas/investment-immigration">
                   <span style={{ color: "#000000" }}>
-                    <strong>Investment Immigration -</strong>
+                    <strong>{t("header.links.investmentImmigration")} -</strong>
                   </span>
-                </a>
+                </Link>
                 <span style={{ color: "#000000" }}>
-                  <strong> </strong>Green cards are available to immigrants who
-                  make a large investment in a U.S.-based business that
-                  generates at least ten jobs. There is also a non-immigrant
-                  visa option for foreign nationals from certain countries to
-                  obtain an E2 visa and allow them to temporarily stay in the US
-                  to manage their businesses.
+                  <strong> </strong> {t("practiceAreas.investmentImmigration")}
                 </span>
               </li>
             </ul>
@@ -93,58 +89,54 @@ export const PracticeAreasSection = () => {
           <div className="cnt-stl half" id="ContentV1AltContent2">
             <ul>
               <li>
-                <a href="https://www.immigrationattorneyhelp.com/practice-areas/employment-based-immigration/">
+                <Link to="/practice-areas/employment-based-immigration">
                   <span style={{ color: "#000000" }}>
-                    <strong>Employment-Based Immigration -</strong>
+                    <strong>
+                      {t("header.links.employmentBasedImmigration")} -
+                    </strong>
                   </span>
-                </a>
+                </Link>
                 <span style={{ color: "#000000" }}>
-                  <strong> </strong>U.S.-based employers can sponsor immigrants
-                  for green cards after obtaining a labor certification.
+                  <strong> </strong>
+                  {t("practiceAreas.employmentBasedImmigration")}
                 </span>
               </li>
               <li>
-                <a href="https://www.immigrationattorneyhelp.com/practice-areas/deportation-defense/">
+                <Link to="/practice-areas/deportation-defense">
                   <span style={{ color: "#000000" }}>
-                    <strong>Deportation Defense -</strong>
+                    <strong>{t("header.links.deportationDefense")} -</strong>
                   </span>
-                </a>
+                </Link>
                 <span style={{ color: "#000000" }}>
-                  <strong> </strong>Several relief options may be available to
-                  immigrants who have been placed in removal proceedings.
+                  <strong> </strong>
+                  {t("practiceAreas.deportationDefense")}
                 </span>
               </li>
               <li>
-                <a href="https://www.immigrationattorneyhelp.com/practice-areas/writ-of-mandamus/">
+                <a href="#">
                   <span style={{ color: "#000000" }}>
-                    <strong>Writs of Mandamus -</strong>
+                    <strong>{t("header.links.writsOfMandamus")} -</strong>
                   </span>
                 </a>
                 <span style={{ color: "#000000" }}>
-                  <strong> </strong>If United States Citizenship and Immigration
-                  Services (USCIS) refuses to make a timely decision on your
-                  case, a Writ of Mandamus can force them to act.
+                  <strong> </strong>
+                  {t("practiceAreas.writsOfMandamus")}
                 </span>
               </li>
               <li>
                 <a href="https://www.immigrationattorneyhelp.com/practice-areas/hardship-waivers/">
                   <span style={{ color: "#000000" }}>
-                    <strong>Hardship Waivers -</strong>
+                    <strong>{t("header.links.hardshipWaivers")} -</strong>
                   </span>
                 </a>
                 <span style={{ color: "#000000" }}>
-                  <strong> </strong>Extreme hardship waivers can help you
-                  overcome inadmissibility obstacles and access immigration
-                  benefits.
+                  <strong> </strong>
+                  {t("practiceAreas.hardshipWaivers")}
                 </span>
               </li>
             </ul>
             <p className="MsoNormal">
-              <strong>
-                Every practice area we handle involves many complex steps.
-                Having reliable representation is the key to making it through
-                these steps.
-              </strong>
+              <strong>{t("practiceAreas.footerDescription")}</strong>
             </p>
           </div>
         </div>

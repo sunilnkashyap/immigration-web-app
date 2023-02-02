@@ -53,9 +53,14 @@ export const HeroBanner = () => {
 
               <span className="mrg_tp-40 blk">{t("hero.subTitle")}</span>
 
-              <Link to="/contact" className="btn v1">
+              <a
+                href="https://eskandarlaw.square.site/"
+                target="_blank"
+                rel="noreferrer"
+                className="btn v1"
+              >
                 {t("hero.link")}
-              </Link>
+              </a>
             </div>
           </div>
         </div>
