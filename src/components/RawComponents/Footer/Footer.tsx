@@ -59,7 +59,7 @@ export const Footer = () => {
                   <li>
                     <a
                       className="fnt_t-6 clr-swp"
-                      href="https://www.immigrationattorneyhelp.com/site-map/"
+                      href="https://www.immigrationattorneyhelp.com/sitemap.xml"
                     >
                       Site Map
                     </a>
@@ -202,7 +202,7 @@ export const Footer = () => {
                   <li role="menuitem">
                     <a
                       className="clr-swp"
-                      href="https://www.immigrationattorneyhelp.com/site-map/"
+                      href="https://www.immigrationattorneyhelp.com/sitemap.xml"
                     >
                       <u>Site Map</u>
                     </a>
