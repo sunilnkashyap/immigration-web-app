@@ -161,9 +161,14 @@ export const Footer = () => {
                           </Link>
                         </li>
                         <li role="menuitem">
-                          <Link to="/" className="fnt_t-6 clr-swp">
+                          <a
+                            href="https://eskandarlaw.square.site/"
+                            target="_blank"
+                            rel="noreferrer"
+                            className="fnt_t-6 clr-swp"
+                          >
                             Schedule A Consultation
-                          </Link>
+                          </a>
                         </li>
                       </ul>
                     </nav>
