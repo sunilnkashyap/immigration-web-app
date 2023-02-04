@@ -6,8 +6,11 @@ import footerBgImage from "../../../assets/images/footer-v2-bg.jpg";
 import footerBgMobileImage from "../../../assets/images/footer-v2-bg-mobile.jpg";
 import footerBgTabletImage from "../../../assets/images/footer-v2-bg-tablet.jpg";
 import { Link } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 
 export const Footer = () => {
+  const { t } = useTranslation();
+
   return (
     <footer id="FooterZone">
       <form
@@ -61,12 +64,12 @@ export const Footer = () => {
                       className="fnt_t-6 clr-swp"
                       href="https://www.immigrationattorneyhelp.com/sitemap.xml"
                     >
-                      Site Map
+                      {t("header.links.siteMaps")}
                     </a>
                   </li>
                   <li>
                     <Link to="/privacy-policy" className="fnt_t-6 clr-swp">
-                      Privacy Policy
+                      {t("header.links.privacyPolicy")}
                     </Link>
                   </li>
                 </ul>
@@ -133,18 +136,21 @@ export const Footer = () => {
                   </div>
                   <div className="mrg_tp-90 pd_tp-90 ta_c-1024">
                     <div className="mrg_bt-20" id="FooterV2NavHeader">
-                      <strong className="fnt_t-4 clr-lnk"> Quick Links </strong>
+                      <strong className="fnt_t-4 clr-lnk">
+                        {" "}
+                        {t("quickLinks")}{" "}
+                      </strong>
                     </div>
                     <nav className="qk-lnk" id="FooterV2Nav">
                       <ul role="menu" aria-label="Footer Navigation">
                         <li role="menuitem">
                           <Link to="/" className="fnt_t-6 clr-swp">
-                            Home
+                            {t("header.links.home")}
                           </Link>
                         </li>
                         <li role="menuitem">
                           <Link to="/our-firm" className="fnt_t-6 clr-swp">
-                            Our Firm
+                            {t("header.links.ourFirm")}
                           </Link>
                         </li>
                         <li role="menuitem">
@@ -152,12 +158,12 @@ export const Footer = () => {
                             to="/practice-areas"
                             className="fnt_t-6 clr-swp"
                           >
-                            Practice Areas
+                            {t("header.links.practiceAreas")}
                           </Link>
                         </li>
                         <li role="menuitem">
                           <Link to="/contact" className="fnt_t-6 clr-swp">
-                            Contact
+                            {t("header.links.contact")}
                           </Link>
                         </li>
                         <li role="menuitem">
@@ -167,7 +173,7 @@ export const Footer = () => {
                             rel="noreferrer"
                             className="fnt_t-6 clr-swp"
                           >
-                            Schedule A Consultation
+                            {t("scheduleAConsultation")}
                           </a>
                         </li>
                       </ul>
@@ -184,15 +190,14 @@ export const Footer = () => {
           <div className="flx-blk-500-mgd ta_c-500 f_m f_sb rsp_pd pd_tp-90 pd_bt-90">
             <small className="inf" id="LegalScorpionFooterDisclaimer">
               <small className="blk mrg_bt-10">
-                The information on this website is for general information
-                purposes only. Nothing on this site should be taken as legal
-                advice for any individual case or situation.
+                {t("footer.descriptionOne")}
                 <br className="hd-1600" />
-                This information is not intended to create, and receipt or
-                viewing does not constitute, an attorney-client relationship.
+                {t("footer.descriptionTwo")}
               </small>
 
-              <p className="mrg_tp-0 mrg_bt-0">© 2022 All Rights Reserved.</p>
+              <p className="mrg_tp-0 mrg_bt-0">
+                © {new Date().getFullYear()} {t("allRights")}
+              </p>
               <nav className="nv-dsp">
                 <ul
                   className="flx f_m"
@@ -204,7 +209,7 @@ export const Footer = () => {
                       className="clr-swp"
                       href="https://www.immigrationattorneyhelp.com/sitemap.xml"
                     >
-                      <u>Site Map</u>
+                      <u> {t("header.links.siteMaps")}</u>
                     </a>
                   </li>
                   <li className="mrg_lt-70" role="menuitem">
@@ -212,7 +217,7 @@ export const Footer = () => {
                       className="clr-swp"
                       href="https://www.immigrationattorneyhelp.com/privacy-policy/"
                     >
-                      <u>Privacy Policy</u>
+                      <u> {t("header.links.privacyPolicy")}</u>
                     </a>
                   </li>
                 </ul>
