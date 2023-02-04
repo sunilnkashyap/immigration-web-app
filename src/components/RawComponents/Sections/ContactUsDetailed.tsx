@@ -1,6 +1,66 @@
 import React from "react";
+import { useForm, SubmitHandler } from "react-hook-form";
+import { toast } from "react-toastify";
+
+type Inputs = {
+  fName: string;
+  lName: string;
+  phone: string;
+  email: string;
+  areYouClient: string;
+  message: string;
+};
+
+declare global {
+  var emailjs: any;
+}
 
 export const ContactUsDetailed = () => {
+  const {
+    register,
+    handleSubmit,
+    watch,
+    formState: { errors },
+  } = useForm<Inputs>();
+  const onSubmit: SubmitHandler<Inputs> = (data) => {
+    emailjs.send("service_izhi80o", "template_tnvue59", data).then(
+      function (response: any) {
+        console.log("SUCCESS!", response.status, response.text);
+        window.scrollTo({
+          top: 0,
+          left: 0,
+          behavior: "smooth",
+        });
+        toast.success(
+          "Your query submitted successfully. Our support team will contact you shortly. Thank you.",
+          {
+            position: "top-right",
+            autoClose: 5000,
+            hideProgressBar: false,
+            closeOnClick: true,
+            pauseOnHover: true,
+            draggable: true,
+            progress: undefined,
+            theme: "dark",
+          }
+        );
+      },
+      function (error: any) {
+        console.log("FAILED...", error);
+        toast.error("Something went wrong please try after some time.", {
+          position: "top-right",
+          autoClose: 5000,
+          hideProgressBar: false,
+          closeOnClick: true,
+          pauseOnHover: true,
+          draggable: true,
+          progress: undefined,
+          theme: "dark",
+        });
+      }
+    );
+  };
+
   return (
     <section
       className="ctc v2 vls-tls dk-bg pd_v rsp_opn-tp rsp_opn-bt show-20"
@@ -110,200 +170,153 @@ export const ContactUsDetailed = () => {
               <strong> </strong>
             </header>
             <div className="ctc-zn" id="ContactV2Zone">
-              <form
-                id="Form_ContactForm"
-                method="post"
-                encType="multipart/form-data"
-                action="https://www.immigrationattorneyhelp.com/practice-areas/"
-              >
+              <form onSubmit={handleSubmit(onSubmit)}>
                 <input type="hidden" name="_m_" value="ContactForm" />
-                <div id="ContactForm" className="ctc-sys v1 ui-repeater">
+                <div id="ContactForm1" className="ctc-sys v1 ui-repeater">
                   <fieldset data-item="i" data-key="">
                     <ul className="flx-grd-sml-blk-500 cls-gp-500">
                       <li className="half">
                         <div className="input-text">
-                          <label htmlFor="ContactForm_ITM0_FirstName">
+                          <label htmlFor="ContactForm1_ITM0_FirstName">
                             First Name
                           </label>
                           <input
-                            required
                             type="text"
-                            id="ContactForm_ITM0_FirstName"
                             className="ui-cms-input"
-                            name="ContactForm$ITM0$FirstName"
-                            value=""
+                            {...register("fName", { required: true })}
                           />
-                          <div className="validation" data-type="valueMissing">
-                            Please enter your first name.
-                          </div>
+                          {errors.fName?.type === "required" && (
+                            <div style={{ color: "red" }}>
+                              Please enter your first name.
+                            </div>
+                          )}
                         </div>
                       </li>
                       <li className="half">
                         <div className="input-text">
-                          <label htmlFor="ContactForm_ITM0_LastName">
+                          <label htmlFor="ContactForm1_ITM0_LastName">
                             Last Name
                           </label>
                           <input
-                            required
                             type="text"
-                            id="ContactForm_ITM0_LastName"
                             className="ui-cms-input"
-                            name="ContactForm$ITM0$LastName"
-                            value=""
+                            {...register("lName", { required: true })}
                           />
-                          <div className="validation" data-type="valueMissing">
-                            Please enter your last name.
-                          </div>
+                          {errors.lName?.type === "required" && (
+                            <div style={{ color: "red" }}>
+                              Please enter your last name.
+                            </div>
+                          )}
                         </div>
                       </li>
                       <li className="half">
                         <div className="input-text">
-                          <label htmlFor="ContactForm_ITM0_Phone">Phone</label>
+                          <label htmlFor="ContactForm1_ITM0_Phone">Phone</label>
                           <input
-                            required
                             type="tel"
-                            id="ContactForm_ITM0_Phone"
-                            pattern="[(]\d{3}[)][\s]\d{3}[\-]\d{4}"
                             className="phone-mask ui-cms-input"
-                            name="ContactForm$ITM0$Phone"
-                            value=""
+                            {...register("phone", {
+                              required: true,
+                            })}
                           />
-                          <div className="validation" data-type="valueMissing">
-                            Please enter your phone number.
-                          </div>
-                          <div className="validation" data-type="typeMismatch">
-                            This isn't a valid phone number.
-                          </div>
+                          {errors.phone?.type === "required" && (
+                            <div style={{ color: "red" }}>
+                              Please enter your phone number.
+                            </div>
+                          )}
+                          {errors.phone?.type === "pattern" && (
+                            <div style={{ color: "red" }}>
+                              Please enter valid phone number.
+                            </div>
+                          )}
                         </div>
                       </li>
                       <li className="half">
                         <div className="input-text">
-                          <label htmlFor="ContactForm_ITM0_EmailAddress">
+                          <label htmlFor="ContactForm1_ITM0_EmailAddress">
                             Email
                           </label>
                           <input
-                            required
-                            type="email"
-                            id="ContactForm_ITM0_EmailAddress"
+                            type="text"
                             className="ui-cms-input"
-                            name="ContactForm$ITM0$EmailAddress"
-                            value=""
+                            {...register("email", {
+                              required: true,
+                              pattern:
+                                /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i,
+                            })}
                           />
-                          <div className="validation" data-type="valueMissing">
-                            Please enter your email address.
-                          </div>
-                          <div className="validation" data-type="typeMismatch">
-                            This isn't a valid email address.
-                          </div>
+                          {errors.email?.type === "required" && (
+                            <div style={{ color: "red" }}>
+                              Please enter your email address.
+                            </div>
+                          )}
+                          {errors.email?.type === "pattern" && (
+                            <div style={{ color: "red" }}>
+                              Please enter valid email address.
+                            </div>
+                          )}
                         </div>
                       </li>
                       <li className="sel full">
                         <div className="input-text">
-                          <label htmlFor="ContactForm_ITM0_LeadTypeID">
+                          <label htmlFor="ContactForm1_ITM0_LeadTypeID">
                             Are you a new client?
                           </label>
                           <select
-                            required
-                            id="ContactForm_ITM0_LeadTypeID"
+                            id="ContactForm1_ITM0_LeadTypeID"
                             className="ui-cms-select ui-cms-input"
-                            name="ContactForm$ITM0$LeadTypeID"
+                            {...register("areYouClient", { required: true })}
                           >
                             <option value=""></option>
-                            <option value="1">
+                            <option value="Yes, I am a potential new client.">
                               Yes, I am a potential new client
                             </option>
-                            <option value="11">
+                            <option value="No, I'm a current existing client.">
                               No, I'm a current existing client
                             </option>
-                            <option value="13">I'm neither.</option>
+                            <option value="I'm neither.">I'm neither.</option>
                           </select>
                           <svg
                             viewBox="0 0 24 24"
                             role="presentation"
-                            data-use="/cms/svg/site/dycmgkz8j91.24.2208191902389.svg#arrow_down"
+                            data-use="assets/dycmgkz8j91.24.2208191902389.svg#arrow_down"
                           >
                             <path d="M24 6.905L12.009 18.931L0 6.905L1.837 5.068L11.992 15.223L22.163 5.068Z"></path>
                           </svg>
-                          <div className="validation" data-type="valueMissing">
-                            Please make a selection.
-                          </div>
+                          {errors.areYouClient?.type === "required" && (
+                            <div style={{ color: "red" }}>
+                              Please make a selection.
+                            </div>
+                          )}
                         </div>
                       </li>
 
                       <li className="msg full">
                         <div className="input-text">
-                          <label htmlFor="ContactForm_ITM0_Message">
+                          <label htmlFor="ContactForm1_ITM0_Message">
                             How can we help you?
                           </label>
                           <textarea
-                            required
-                            id="ContactForm_ITM0_Message"
                             className="ui-cms-input"
-                            name="ContactForm$ITM0$Message"
+                            {...register("message", { required: true })}
                           ></textarea>
-                          <div className="validation" data-type="valueMissing">
-                            Please enter a message.
-                          </div>
+
+                          {errors.message?.type === "required" && (
+                            <div style={{ color: "red" }}>
+                              Please enter a message.
+                            </div>
+                          )}
                         </div>
                       </li>
                     </ul>
                   </fieldset>
-                  <input
-                    id="ContactForm_ITM0_StreetAddress"
-                    type="hidden"
-                    className="ui-cms-input"
-                    name="ContactForm$ITM0$StreetAddress"
-                    value=""
-                    data-ga-target="address"
-                    data-item="i"
-                    data-key=""
-                  />
-                  <input
-                    id="ContactForm_ITM0_City"
-                    type="hidden"
-                    className="ui-cms-input"
-                    name="ContactForm$ITM0$City"
-                    value=""
-                    data-ga-target="city"
-                    data-item="i"
-                    data-key=""
-                  />
-                  <input
-                    id="ContactForm_ITM0_State"
-                    type="hidden"
-                    className="ui-cms-input"
-                    name="ContactForm$ITM0$State"
-                    value=""
-                    data-ga-target="state"
-                    data-item="i"
-                    data-key=""
-                  />
-                  <input
-                    id="ContactForm_ITM0_ZipCode"
-                    type="hidden"
-                    className="ui-cms-input"
-                    name="ContactForm$ITM0$ZipCode"
-                    value=""
-                    data-ga-target="zipcode"
-                    data-item="i"
-                    data-key=""
-                  />
-                  <input
-                    id="ContactForm_ITM0_FFD6"
-                    type="hidden"
-                    className="ui-cms-input"
-                    name="ContactForm$ITM0$FFD6"
-                    value="1669910029300"
-                    data-item="i"
-                    data-key=""
-                  />
                   <div className="mrg_tp-60" data-item="i" data-key="">
                     <button
                       className="btn v1"
                       aria-labelledby="ContactForm"
                       type="submit"
-                      id="ContactForm_ITM0_ctl13"
-                      name="ContactForm$ITM0$ctl13"
+                      id="ContactForm1_ITM0_ctl13"
+                      name="ContactForm1$ITM0$ctl13"
                       data-commandname="Update"
                     >
                       <span> Submit Form </span>
