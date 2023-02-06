@@ -3,7 +3,8 @@ import { useTranslation } from "react-i18next";
 import { Link } from "react-router-dom";
 
 export const HeroBanner = () => {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
+
   return (
     <section
       className="mstg v3 lt-bg bg-image show-20"
@@ -48,7 +49,11 @@ export const HeroBanner = () => {
             className="inf hlf-big ta_c-1024 anm_hlf-lt"
             id="MainstageV2Info"
           >
-            <div className="bg-bx lk-bg pd_h-30 pd_v-40 ta_r">
+            <div
+              className={`bg-bx lk-bg pd_h-30 pd_v-40  ${
+                i18n.language !== "en" ? "ta_r" : ""
+              }`}
+            >
               <strong className="fnt_t-big">{t("hero.title")}</strong>
 
               <span className="mrg_tp-40 blk">{t("hero.subTitle")}</span>
