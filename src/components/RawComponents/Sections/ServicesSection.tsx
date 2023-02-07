@@ -1,6 +1,9 @@
 import React, { useEffect } from "react";
+import { useTranslation } from "react-i18next";
+import { Link } from "react-router-dom";
 
 export const ServicesSection = () => {
+  const { t } = useTranslation();
   useEffect(() => {
     (window as any)?.USC?.scrollingList(
       document.getElementById("ServicesV3List")
@@ -33,24 +36,28 @@ export const ServicesSection = () => {
                       data-item="i"
                       data-key="92785"
                     >
-                      <a
+                      <Link
+                        to="practice-areas/humanitarian-relief/"
                         className="pd_h-10 pd_v-30 ta_c clr-swp flx f_clm f_m f_c full"
-                        href="https://www.immigrationattorneyhelp.com/practice-areas/humanitarian-relief/"
                       >
-                        <strong className="fnt_t-5">Humanitarian Relief</strong>
-                      </a>
+                        <strong className="fnt_t-5">
+                          {t("header.links.humanitarianRelief")}
+                        </strong>
+                      </Link>
                     </li>
                     <li
                       className="flx ato bg-bx lk-bg srv-itm"
                       data-item="i"
                       data-key="92787"
                     >
-                      <a
+                      <Link
                         className="pd_h-10 pd_v-30 ta_c clr-swp flx f_clm f_m f_c full"
-                        href="https://www.immigrationattorneyhelp.com/practice-areas/deportation-defense/"
+                        to="/practice-areas/deportation-defense/"
                       >
-                        <strong className="fnt_t-5">Deportation Defense</strong>
-                      </a>
+                        <strong className="fnt_t-5">
+                          {t("header.links.deportationDefense")}
+                        </strong>
+                      </Link>
                     </li>
                   </ul>
                 </li>
@@ -61,26 +68,28 @@ export const ServicesSection = () => {
                       data-item="i"
                       data-key="92781"
                     >
-                      <a
+                      <Link
                         className="pd_h-10 pd_v-30 ta_c clr-swp flx f_clm f_m f_c full"
-                        href="https://www.immigrationattorneyhelp.com/practice-areas/asylum/"
+                        to="/practice-areas/asylum/"
                       >
-                        <strong className="fnt_t-5">Asylum</strong>
-                      </a>
+                        <strong className="fnt_t-5">
+                          {t("header.links.asylum")}
+                        </strong>
+                      </Link>
                     </li>
                     <li
                       className="flx ato bg-bx lk-bg srv-itm"
                       data-item="i"
                       data-key="92782"
                     >
-                      <a
+                      <Link
                         className="pd_h-10 pd_v-30 ta_c clr-swp flx f_clm f_m f_c full"
-                        href="https://www.immigrationattorneyhelp.com/practice-areas/family-based-immigration/"
+                        to="/practice-areas/family-based-immigration/"
                       >
                         <strong className="fnt_t-5">
-                          Family Based Immigration
+                          {t("header.links.familyBasedImmigration")}
                         </strong>
-                      </a>
+                      </Link>
                     </li>
                   </ul>
                 </li>
@@ -91,28 +100,28 @@ export const ServicesSection = () => {
                       data-item="i"
                       data-key="92786"
                     >
-                      <a
+                      <Link
                         className="pd_h-10 pd_v-30 ta_c clr-swp flx f_clm f_m f_c full"
-                        href="https://www.immigrationattorneyhelp.com/practice-areas/citizenship-naturalization/"
+                        to="/practice-areas/citizenship-naturalization/"
                       >
                         <strong className="fnt_t-5">
-                          Citizenship &amp; Naturalization
+                          {t("header.links.citizenshipNaturalization")}
                         </strong>
-                      </a>
+                      </Link>
                     </li>
                     <li
                       className="flx ato bg-bx lk-bg srv-itm"
                       data-item="i"
                       data-key="92784"
                     >
-                      <a
+                      <Link
                         className="pd_h-10 pd_v-30 ta_c clr-swp flx f_clm f_m f_c full"
-                        href="https://www.immigrationattorneyhelp.com/practice-areas/investment-immigration/"
+                        to="/practice-areas/investment-immigration/"
                       >
                         <strong className="fnt_t-5">
-                          Investment Immigration
+                          {t("header.links.investmentImmigration")}
                         </strong>
-                      </a>
+                      </Link>
                     </li>
                   </ul>
                 </li>
@@ -123,14 +132,14 @@ export const ServicesSection = () => {
                       data-item="i"
                       data-key="92783"
                     >
-                      <a
+                      <Link
                         className="pd_h-10 pd_v-30 ta_c clr-swp flx f_clm f_m f_c full"
-                        href="https://www.immigrationattorneyhelp.com/practice-areas/employment-based-immigration/"
+                        to="/practice-areas/employment-based-immigration/"
                       >
                         <strong className="fnt_t-5">
-                          Employment Based Immigration
+                          {t("header.links.employmentBasedImmigration")}
                         </strong>
-                      </a>
+                      </Link>
                     </li>
                   </ul>
                 </li>
@@ -167,60 +176,24 @@ export const ServicesSection = () => {
           </div>
           <div className="half" data-content="true">
             <header className="mrg_bt" id="ServicesV3Header">
-              <h1>Anaheim Immigration Attorney</h1>
+              <h1>{t("service.title")}</h1>
             </header>
             <div className="cnt-stl" id="ServicesV3Content">
               <h2>
                 <span style={{ color: "#000000" }}>
-                  Accessible and Personalized Immigration Representation
+                  {t("service.description")}
                 </span>
               </h2>
               <p>
-                <span style={{ color: "#000000" }}>
-                  If you are experiencing any type of immigration problem, you
-                  deserve a compassionate legal advocate who understands what
-                  you are going through. At the Law Offices of Fady Eskandar we
-                  can help you navigate the United States immigration system
-                  with confidence.&nbsp;
-                </span>
-                <a href="https://www.immigrationattorneyhelp.com/our-firm/fady-eskandar/">
-                  <span style={{ color: "#000000" }}>Our founder</span>
-                </a>
-                <span style={{ color: "#000000" }}>
-                  is an immigrant himself and can provide the honest,
-                  communicative representation you need to succeed.
-                </span>
+                <span style={{ color: "#000000" }}>{t("service.paraOne")}</span>
               </p>
               <p>
-                <span style={{ color: "#000000" }}>
-                  <strong>
-                    Our Anaheim immigration lawyer strives to offer an
-                    exceptional level of service to people from all walks of
-                    life
-                  </strong>
-                  . We know how to effectively approach a wide variety of
-                  immigration scenarios and will work tirelessly to help you
-                  achieve your short- and long-term objectives. Your
-                  satisfaction is our top priority, and we will utilize the full
-                  extent of our firm’s resources as we work to favorably resolve
-                  your case.
-                </span>
+                <span style={{ color: "#000000" }}>{t("service.paraTwo")}</span>
               </p>
               <hr />
               <p style={{ textAlign: "center" }}>
                 <span style={{ color: "#000000" }}>
-                  <strong>Call </strong>
-                </span>
-                <a href="tel:(714) 729-3303" id="ServicesV3_1">
-                  <span style={{ color: "#000000" }}>
-                    <strong>(714) 729-3303</strong>
-                  </span>
-                </a>
-                <span style={{ color: "#000000" }}>
-                  <strong>
-                    or&nbsp;contact us online to request an initial
-                    consultation. Flexible payment options are available.
-                  </strong>
+                  {t("service.paraThree")}
                 </span>
               </p>
               <hr />
