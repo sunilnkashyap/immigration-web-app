@@ -1,5 +1,6 @@
 import React from "react";
 import { useForm, SubmitHandler } from "react-hook-form";
+import { useTranslation } from "react-i18next";
 import { toast } from "react-toastify";
 
 type Inputs = {
@@ -22,6 +23,9 @@ export const ContactUs = () => {
     watch,
     formState: { errors },
   } = useForm<Inputs>();
+
+  const { t } = useTranslation();
+
   const onSubmit: SubmitHandler<Inputs> = (data) => {
     emailjs.send("service_izhi80o", "template_tnvue59", data).then(
       function (response: any) {
@@ -69,7 +73,7 @@ export const ContactUs = () => {
       <div className="mn_wd rsp_pd rsp_opn-tp">
         <div className="bg-bx ulk-bg pd_h pd_v-40">
           <header className="mrg_bt-60 ta_c" id="ContactV1AltHeader">
-            <h4>Contact Us</h4>
+            <h4>{t("contactForm.title")}</h4>
 
             <strong> </strong>
           </header>
@@ -82,7 +86,7 @@ export const ContactUs = () => {
                     <li className="half">
                       <div className="input-text">
                         <label htmlFor="ContactForm1_ITM0_FirstName">
-                          First Name
+                          {t("contactForm.fName")}
                         </label>
                         <input
                           type="text"
@@ -99,7 +103,7 @@ export const ContactUs = () => {
                     <li className="half">
                       <div className="input-text">
                         <label htmlFor="ContactForm1_ITM0_LastName">
-                          Last Name
+                          {t("contactForm.lName")}
                         </label>
                         <input
                           type="text"
@@ -115,7 +119,10 @@ export const ContactUs = () => {
                     </li>
                     <li className="half">
                       <div className="input-text">
-                        <label htmlFor="ContactForm1_ITM0_Phone">Phone</label>
+                        <label htmlFor="ContactForm1_ITM0_Phone">
+                          {" "}
+                          {t("contactForm.phone")}
+                        </label>
                         <input
                           type="tel"
                           className="phone-mask ui-cms-input"
@@ -138,7 +145,7 @@ export const ContactUs = () => {
                     <li className="half">
                       <div className="input-text">
                         <label htmlFor="ContactForm1_ITM0_EmailAddress">
-                          Email
+                          {t("contactForm.email")}
                         </label>
                         <input
                           type="text"
@@ -163,7 +170,7 @@ export const ContactUs = () => {
                     <li className="sel full">
                       <div className="input-text">
                         <label htmlFor="ContactForm1_ITM0_LeadTypeID">
-                          Are you a new client?
+                          {t("contactForm.newClient")}
                         </label>
                         <select
                           id="ContactForm1_ITM0_LeadTypeID"
@@ -197,7 +204,7 @@ export const ContactUs = () => {
                     <li className="msg full">
                       <div className="input-text">
                         <label htmlFor="ContactForm1_ITM0_Message">
-                          How can we help you?
+                          {t("contactForm.message")}
                         </label>
                         <textarea
                           className="ui-cms-input"

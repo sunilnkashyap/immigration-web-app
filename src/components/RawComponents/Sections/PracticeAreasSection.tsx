@@ -3,7 +3,7 @@ import { useTranslation } from "react-i18next";
 import { Link } from "react-router-dom";
 
 export const PracticeAreasSection = () => {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
   return (
     <section
       className="cnt v1 lt-bg pd_v-60 rsp_opn-tp rsp_opn-bt"
@@ -23,7 +23,12 @@ export const PracticeAreasSection = () => {
             </span>
           </p>
         </header>
-        <div className="flx-ato-rsp-mgd-l f_sb psu-bfr">
+        <div
+          className="flx-ato-rsp-mgd-l f_sb psu-bfr"
+          style={{
+            flexDirection: i18n.language === "en" ? "row" : "row-reverse",
+          }}
+        >
           <div className="cnt-stl half" id="ContentV1AltContent">
             <ul>
               <li>

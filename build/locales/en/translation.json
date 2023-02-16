@@ -56,5 +56,14 @@
     "paraOne": "If you are experiencing any type of immigration problem, you deserve a compassionate legal advocate who understands what you are going through. At the Law Offices of Fady Eskandar we can help you navigate the United States immigration system with confidence. Our founder is an immigrant himself and can provide the honest, communicative representation you need to succeed.",
     "paraTwo": "Our Anaheim immigration lawyer strives to offer an exceptional level of service to people from all walks of life. We know how to effectively approach a wide variety of immigration scenarios and will work tirelessly to help you achieve your short- and long-term objectives. Your satisfaction is our top priority, and we will utilize the full extent of our firm’s resources as we work to favorably resolve your case.",
     "paraThree": "Call (714) 729-3303 or contact us online to request an initial consultation. Flexible payment options are available."
+  },
+  "contactForm": {
+    "title": "Contact Us",
+    "fName": "First Name",
+    "lName": "Last Name",
+    "email": "Email",
+    "phone": "Phone",
+    "newClient": "Are you a new client?",
+    "message": "How can we help you?"
   }
 }
