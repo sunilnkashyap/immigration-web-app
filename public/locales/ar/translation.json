@@ -1,6 +1,6 @@
 {
   "language": "English",
-  "phoneNumber": "(714) 729-3303",
+  "phoneNumber": "729-3303 (714)",
   "scheduleAConsultation":"جدولة استشارة",
   "quickLinks": "روابط سريعة",
   "allRights": "كل الحقوق محفوظة",
@@ -9,12 +9,12 @@
     "descriptionTwo": "لا يُقصد من هذه المعلومات إنشاء علاقة بين المحامي وموكله ، ولا يشكل استلامها أو عرضها."
   },
   "header": {
-    "callUs": "اتصل بنا الآن    ",
+    "callUs": "اتصل بنا اليوم",
     "links": {
       "home": "الرئيسية",
       "ourFirm": "عن مكتبنا",
       "fadyEskandar": "فادي اسكندر",
-      "practiceAreas": "مجالات التمثيل القانوني",
+      "practiceAreas": "عن خدماتنا",
       "asylum": "اللجوء",
       "familyBasedImmigration": "الهجرة العائلية",
       "humanitarianRelief": "طرق الهجرة الإنسانية",
@@ -22,8 +22,8 @@
       "investmentImmigration": "الهجرة عن طريق الاستثمار",
       "employmentBasedImmigration": "الهجرة عن طريق العمل",
       "deportationDefense": "الدفاع ضد الترحيل",
-      "reviews": "المراجعات",
-      "contact": "اتصل",
+      "reviews": "التقييمات",
+      "contact": "الاتصال بنا",
       "writsOfMandamus": "أوامر مانداموس",
       "hardshipWaivers": "الإعفاءات من المشقة",
       "siteMaps": "خريطة الموقع",
