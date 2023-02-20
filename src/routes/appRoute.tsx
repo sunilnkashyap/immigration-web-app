@@ -10,12 +10,13 @@ import {
   EmploymentBasedImmigration,
   DeportationDefense,
 } from "../pages";
-import { ComingSoon } from "../pages/ComingSoon";
 import { Contact } from "../pages/Contact";
-import { HomePageV2 } from "../pages/HomeV2";
-import { FadyEskandar, OurFirm } from "../pages/OurFirm";
 import { PrivacyPolicy } from "../pages/PrivacyPolicy";
 import { Reviews } from "../pages/Reviews";
+
+const HomePageV2 = React.lazy(() => import("../pages/HomeV2"));
+const OurFirm = React.lazy(() => import("../pages/OurFirm/OurFirm"));
+const FadyEskandar = React.lazy(() => import("../pages/OurFirm/FadyEskandar"));
 
 export const appRouter = createBrowserRouter([
   {

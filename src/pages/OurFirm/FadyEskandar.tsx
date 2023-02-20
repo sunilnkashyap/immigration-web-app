@@ -11,7 +11,7 @@ import {
 import { ScrollToTop } from "../../components/ScrollToTop";
 import { Helmet } from "react-helmet";
 
-export const FadyEskandar = () => {
+const FadyEskandar = () => {
   const { t, i18n } = useTranslation();
   return (
     <>
@@ -40,3 +40,5 @@ export const FadyEskandar = () => {
     </>
   );
 };
+
+export default FadyEskandar;

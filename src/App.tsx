@@ -1,4 +1,4 @@
-import React, { StrictMode, useEffect } from "react";
+import React, { StrictMode, Suspense, useEffect } from "react";
 import { RouterProvider } from "react-router-dom";
 import { appRouter } from "./routes";
 import { ThemeProvider } from "@mui/material/styles";
@@ -12,24 +12,26 @@ function App() {
   const { t, i18n } = useTranslation();
   return (
     <div className={`${i18n.language == "en" ? "" : "ta_r"}`}>
-      <StrictMode>
-        <CssBaseline />
-        <ThemeProvider theme={theme}>
-          <RouterProvider router={appRouter} />
-          <ToastContainer
-            position="top-right"
-            autoClose={5000}
-            hideProgressBar={false}
-            newestOnTop={false}
-            closeOnClick
-            rtl={false}
-            pauseOnFocusLoss
-            draggable
-            pauseOnHover
-            theme="dark"
-          />
-        </ThemeProvider>
-      </StrictMode>
+      <Suspense fallback={<div>Loading...</div>}>
+        <StrictMode>
+          <CssBaseline />
+          <ThemeProvider theme={theme}>
+            <RouterProvider router={appRouter} />
+            <ToastContainer
+              position="top-right"
+              autoClose={5000}
+              hideProgressBar={false}
+              newestOnTop={false}
+              closeOnClick
+              rtl={false}
+              pauseOnFocusLoss
+              draggable
+              pauseOnHover
+              theme="dark"
+            />
+          </ThemeProvider>
+        </StrictMode>
+      </Suspense>
     </div>
   );
 }

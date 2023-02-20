@@ -11,7 +11,7 @@ import {
 import { ScrollToTop } from "../../components/ScrollToTop";
 import { Helmet } from "react-helmet";
 
-export const OurFirm = () => {
+const OurFirm = () => {
   const { t, i18n } = useTranslation();
   return (
     <>
@@ -41,3 +41,5 @@ export const OurFirm = () => {
     </>
   );
 };
+
+export default OurFirm;

@@ -411,6 +411,7 @@ export const Header = () => {
                     <a
                       className="mrg_lt-90 ato clr-swp str blk ta_l rlt dt-nv"
                       onClick={toggleLanguage}
+                      href={`#${t("language")}`}
                     >
                       <span className="rlt blk rlt pd_tp pd_bt">
                         {t("language")}
