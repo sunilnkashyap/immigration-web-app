@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.80e9f931.css",
-    "main.js": "/static/js/main.cf4e2b80.js",
+    "main.js": "/static/js/main.31458894.js",
     "static/js/787.589078bb.chunk.js": "/static/js/787.589078bb.chunk.js",
     "static/media/contact.jpg": "/static/media/contact.b8a206b2690a2356d432.jpg",
     "static/media/Fady-Eskandar.jpg": "/static/media/Fady-Eskandar.08a468e3a7f18acc79ab.jpg",
@@ -16,11 +16,11 @@
     "index.html": "/index.html",
     "static/media/getFetch.cjs": "/static/media/getFetch.40f37ddea2378391108f.cjs",
     "main.80e9f931.css.map": "/static/css/main.80e9f931.css.map",
-    "main.cf4e2b80.js.map": "/static/js/main.cf4e2b80.js.map",
+    "main.31458894.js.map": "/static/js/main.31458894.js.map",
     "787.589078bb.chunk.js.map": "/static/js/787.589078bb.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.80e9f931.css",
-    "static/js/main.cf4e2b80.js"
+    "static/js/main.31458894.js"
   ]
 }

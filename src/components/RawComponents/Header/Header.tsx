@@ -1,9 +1,9 @@
-import React, { useState } from "react";
-import { useTranslation } from "react-i18next";
 import { Link, useLocation } from "react-router-dom";
+import React, { useState } from "react";
 
-import logoImage from "../../../assets/logo/logo.png";
 import logo2Image from "../../../assets/logo/logo2.png";
+import logoImage from "../../../assets/logo/logo.png";
+import { useTranslation } from "react-i18next";
 
 export const Header = () => {
   const location = useLocation();
@@ -239,7 +239,7 @@ export const Header = () => {
                   >
                     <Link
                       to="/"
-                      className="rg_rt-90 ato clr-swp str blk ta_l rlt dt-nv"
+                      className="mrg_rt-20 mrg_lt-20 ato clr-swp str blk ta_l rlt dt-nv"
                     >
                       <span className="rlt blk rlt pd_tp pd_bt">
                         {t("header.links.home")}
@@ -254,7 +254,7 @@ export const Header = () => {
                   >
                     <Link
                       to="/our-firm"
-                      className="mrg_rt-90 mrg_lt-90 ato clr-swp str blk ta_l four-fifths rlt dt-nv"
+                      className="mrg_rt-20 mrg_lt-20 ato clr-swp str blk ta_l four-fifths rlt dt-nv"
                     >
                       <span className="rlt blk rlt pd_tp pd_bt">
                         {t("header.links.ourFirm")}
@@ -298,7 +298,7 @@ export const Header = () => {
                   <li className="flx f_m f_wrp ato rlt" role="menuitem">
                     <Link
                       to="/practice-areas"
-                      className="mrg_rt-90 mrg_lt-90 ato clr-swp str blk ta_l four-fifths rlt dt-nv"
+                      className="mrg_rt-20 mrg_lt-20 ato clr-swp str blk ta_l four-fifths rlt dt-nv"
                     >
                       <span className="rlt blk rlt pd_tp pd_bt">
                         {t("header.links.practiceAreas")}
@@ -390,7 +390,7 @@ export const Header = () => {
                   <li className="flx ato rlt" role="menuitem">
                     <Link
                       to="/reviews"
-                      className="mrg_rt-90 mrg_lt-90 ato clr-swp str blk ta_l rlt dt-nv"
+                      className="mrg_rt-20 mrg_lt-20 ato clr-swp str blk ta_l rlt dt-nv"
                     >
                       <span className="rlt blk rlt pd_tp pd_bt">
                         {t("header.links.reviews")}
@@ -400,16 +400,29 @@ export const Header = () => {
                   <li className="flx ato rlt" role="menuitem">
                     <Link
                       to="/contact"
-                      className="mrg_rt-90 mrg_lt-90 ato clr-swp str blk ta_l rlt dt-nv"
+                      className="mrg_rt-20 mrg_lt-20 ato clr-swp str blk ta_l rlt dt-nv"
                     >
                       <span className="rlt blk rlt pd_tp pd_bt">
                         {t("header.links.contact")}
                       </span>
                     </Link>
                   </li>
+                  <li className="flx ato rlt" role="menuitem">
+                    <a
+                      href="https://eskandarlaw.square.site/"
+                      target="_blank"
+                      rel="noreferrer"
+                      className="mrg_rt-20 mrg_lt-20 ato clr-swp str blk ta_l rlt dt-nv"
+                    >
+                      <span className="rlt blk rlt pd_tp pd_bt">
+                        {t("scheduleAConsultation")}
+                      </span>
+                    </a>
+                  </li>
+
                   <li>
                     <a
-                      className="mrg_lt-90 ato clr-swp str blk ta_l rlt dt-nv"
+                      className="mrg_rt-20 mrg_lt-20 ato clr-swp str blk ta_l rlt dt-nv"
                       onClick={toggleLanguage}
                       href={`#${t("language")}`}
                     >
